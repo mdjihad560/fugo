@@ -1,0 +1,156 @@
+
+footer.fugo-footer-section{
+  background-color: var(--gray-800);
+}
+.fugo-footer-top {
+  padding: 100px 0 95px;
+  @include max(991px){
+    padding: 80px 0;
+  }
+  @include max(767px){
+    padding: 60px 0;
+  }
+}
+.fugo-textarea{
+  @include max(991px){
+    margin-bottom: 50px;
+    max-width: 500px;
+  }
+  .fugo-footer-logo{
+    margin-bottom: 30px;
+  }
+  p{
+    color: #FFFFFF;
+    opacity: 0.6;
+  }
+  .fugo-copywright{
+    font-size: 16px;
+    margin-top: 55px;
+    @include max(991px) {
+      margin-top: 25px;
+    }
+  }
+}
+
+.fugo-footer-menu{
+  &.fugo-custom-margin{
+    margin-left: 60px;
+    @include max(991px) {
+      margin: 0 0 40px;
+    }
+  }
+  @include max(575px){
+    margin-bottom: 40px;
+  }
+  span{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 25px;
+    display: block;
+    color: var(--gray-10);
+    opacity: 0.6;
+    @include max(575px){
+      margin-bottom: 20px;
+    }
+  }
+  ul{
+    li{
+      margin-bottom: 10px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      a{
+        font-size: 18px;
+        color: var(--gray-10);
+        transition: all 0.4s;
+        &:hover{
+          opacity: 1;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+
+// footer two
+footer.fugo-foote2-section {
+  background-size: cover;
+  background-position: center;
+  .fugo-footer-top{
+    padding: 120px 0;
+    border: none;
+    @include max(991px) {
+      padding: 70px 0;
+    }
+    @include max(767px) {
+      padding: 50px 0 ;
+    }
+  }
+  .fugo-default-content {
+    max-width: 590px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+  }
+
+}
+.fugo-footer-bottom {
+  display: flex;
+  justify-content: center;
+  padding: 35px 0;
+  @include max(767px){
+    display: block;
+    text-align: center;
+  }
+  @include max(575px){
+    display: block;
+    text-align: center;
+    padding: 10px 0 35px;
+  }
+  p{
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin: 0;
+    margin-right: 40px;
+    @include max(767px){
+      margin: 0 0 20px;
+    }
+  }
+  .fugo-footer-menu{
+    @include max(575px){
+      margin-bottom: 0;
+    }
+    ul{
+      li{
+        padding-right: 20px;
+        display: inline-block;
+        position: relative;
+        &::after{
+          content: " ";
+          top: 10px;
+          right: 5px;
+          border-radius: 50%;
+          width: 5px;
+          height: 5px;
+          position: absolute;
+          background: #FFFFFF;
+          opacity: 0.8;
+        }
+        &:last-child:after{
+          content: none;
+        }
+        a{
+          font-size: 16px;
+          &:hover{
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,258 @@
+
+// slider one section
+.nexto-slider-section{
+    background-color: var(--gray-800);
+    position: relative;
+    z-index: 0;
+}
+
+.nexto-slider-one .slick-slide{
+    margin: 2px 12px;
+  }
+  .nexto-slider-one .prev-arrow, 
+  .nexto-slider-one .next-arrow {
+    left: -30px;
+    top: 50%;
+    z-index: 9;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    color: #201C2C;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 100%;
+    background-size: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--gray-10);
+    border: 5px solid #13111A;
+    transition: all 0.4s;
+    background-image: url(../images/svg/arrow-left.svg);
+    
+  }
+  .nexto-slider-one .next-arrow {
+    left: auto;
+    right: -30px;
+    background-image: url(../images/svg/arrow-right.svg);
+  }
+  .slick-prev:before, .slick-next:before{
+    display: none;
+  }
+
+  .nexto-slider-one{
+    .slick-slide.slick-current.slick-active{
+        .nexto-btn:before {
+            opacity: 1;
+        }
+        .nexto-btn{
+            color: var(--gray-10);
+        }
+        .nexto-card-wrap{
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0);
+            &:before{
+                opacity: 1;
+            }
+        }
+  
+    }
+  }
+ 
+
+//   protfolio section
+.nexto-portfolio-section{
+    position: relative;
+    z-index: 0;
+    .nexto-section-title{
+        margin: 0 auto 55px;
+    }
+}
+
+
+
+
+.nexto-portfolio-menu{
+    margin-bottom: 55px;
+    @include max(991px) {
+        margin-bottom: 35px;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        @include max(1199px) {
+         justify-content: space-between;
+        }
+        li{
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 16px;
+            position: relative;
+            border-radius: 10px;
+            padding: 2px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: all 0.4s;
+            background: linear-gradient(to right, #FF00D4 , #7D41EA, #0080FF );
+            &.active{
+                transition: all 0.4s;
+                background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
+                span{
+                    transition: all 0.4s;
+                    background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
+                }
+            }
+            @include max(1199px) {
+                margin: 0 0 15px;
+                flex: 0 0 32.2%;
+            }
+            @include max(767px) {
+                flex: 0 0 48.5%;
+            }
+            @include max(420px) {
+                flex: 0 0 100%;
+            }
+            img{
+                margin-right: 10px;
+            }
+            span{
+                display: flex;
+                align-items: center;
+                height: 55px;
+                padding: 10px 20.5px;
+                border-radius: 10px;
+                width: 100%;
+                justify-content: center;
+                background-color: var(--gray-800);
+            }
+    
+        }
+    }
+    
+}
+
+.nexto-portfolio-section{
+    background-color: var(--gray-800);
+    .nexto-card-wrap{
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+}
+.nexto-portfolio-wrap {
+    margin-left: -24px;
+}
+.nexto-portfolio-btn {
+    text-align: center;
+    margin-top: 56px;
+    @include max(991px) {
+        margin-top: 35px;
+    }
+}
+.nexto-section-button{
+    @include max(991px) {
+        margin-top: 35px;
+        text-align: center;
+    }
+}
+
+
+// text slider
+
+.nexto-text-slider-section {
+    padding: 22px 0;
+    overflow: hidden;
+    background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
+}
+.nexto-text-slider {
+    &-data{
+        display: flex!important;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px;
+        flex-direction: row-reverse;
+        @include max(600px) {
+            text-align: center;
+            display: block!important;
+        }
+        h3{
+            font-weight: 700;
+            font-size: 30px;
+            letter-spacing: 2px;
+            display: inline-block;
+            margin: 0 15px;
+            color: #fff;
+            line-height: 36px;
+
+            @include max(991px) {
+                font-size: 24px;
+            }
+        }
+    }
+    &-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s;
+        @include max(600px) {
+            margin-bottom: 10px;
+        }
+    }
+    
+  }
+
+// roadmap section
+.nexto-roadmap-section{
+    padding: 115px 0 80px;
+    background-color: var(--gray-800);
+    @include max(991px) {
+        padding: 100px 0 60px;
+    }
+    @include max(767px) {
+        padding: 80px 0 40px;
+    }
+    .nexto-iconbox-wrap{
+        margin-bottom: 40px;
+    }
+}
+
+// newsletter section
+.nexto-newslatter-section{
+    z-index: 0;
+    position: relative;
+    background-color: var(--gray-800);
+}
+
+.nexto-newslatter-wrap {
+    border-radius: 10px;
+    padding: 100px;
+    text-align: center;
+    position: relative;
+    background: #201c2c;
+    @include max(991px) {
+        padding: 70px;
+    }
+    @include max(767px) {
+        padding: 50px;
+    }
+    @include max(400px) {
+        padding: 30px;
+    }
+    .nexto-section-title {
+        max-width: 585px;
+        margin: 0 auto 40px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: -2px;
+        transition: all .4s;
+        border-radius: inherit;
+        background: linear-gradient(to right,#ff00d4,#7d41ea,#0080ff);
+    }
+}

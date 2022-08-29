@@ -1,0 +1,19 @@
+{% extends "layout/layout.html" %}
+{% set page_title = "About" %}
+ {% block content %}
+
+{% include "../templates/layout/header-footer/header-one.html" %} 
+
+
+<div class="container">
+  {% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
+</div>
+
+<div class="jihad">
+  <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, fugit.</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, atque.</p>
+</div>
+
+  {% include "../templates/layout/header-footer/footer-one.html" %} 
+  
+{% endblock %}

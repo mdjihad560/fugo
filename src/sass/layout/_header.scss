@@ -1,0 +1,22 @@
+
+
+
+
+header.fugo-header-section {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  top: 0;
+  padding: 13px 0;
+  transition: all 0.4s;
+}
+header.fugo-header-section.sticky-menu{
+  padding: 10px 0;
+  background-color: #F0E9E1;
+}
+.site-menu-main .nav-link-item{
+  color: var(--gray-800);
+}
+
+// header tow
+

@@ -1,0 +1,140 @@
+// text slider
+.nexto-text-slider-section2{
+  background: var(--gray-800);
+  .nexto-text-slider-data{
+    h3{
+      font-size: 28px;
+      font-family: $another-font;
+    }
+  }
+}
+
+// about section
+.nexto-about-section{
+  overflow: hidden;
+  padding: 120px 0;
+  @include max(991px) {
+    padding: 100px 0 ;
+  }
+  @include max(767px) {
+    padding: 80px 0 ;
+  }
+  .nexto-default-content{
+    @include max(991px) {
+      max-width: 500px;
+    }
+  }
+}
+.nexto-swiper-slider-wrap{
+  position: relative;
+  @include max(991px) {
+    margin-bottom: 40px;
+  }
+}
+
+.nexto-double-star {
+  position: absolute;
+  left: -90px;
+  bottom: 15%;
+  -webkit-animation: float 3s ease-in-out infinite;
+    animation: float 3s ease-in-out infinite;
+}
+
+// default section
+.nexto-artwork-section {
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  padding: 120px 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -51.59%, #EEE6D0 119.2%);
+  @include max(991px) {
+    padding: 100px 0 0;
+  }
+  @include max(767px) {
+    padding: 80px 0 0;
+  }
+  .nexto-default-content{
+    @include max(991px) {
+      max-width: 500px;
+    }
+  }
+}
+.nexto-artwork {
+  &-right{
+    text-align: right;
+    position: relative;
+    z-index: 0;
+    @include max(991px) {
+      text-align: center;
+    }
+    &.left{
+      text-align: left;
+      @include max(991px) {
+        text-align: center;
+      }
+    }
+  }
+  &-thumb{
+    display: inline-block;
+    position: relative;
+    transform: rotate(3deg);
+    @include max(991px) {
+      transform: rotate(0deg)!important;
+      margin-bottom: 40px;
+    }
+  }
+  &-data{
+    position: absolute;
+    left: -105px;
+    bottom: 50px;
+    background-size: cover;
+    background-position: center;
+    padding-top: 14px;
+    width: 210px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include max(575px) {
+      width: 150px;
+      height: 150px;
+      left: 0;
+      bottom: 0;
+    }
+    p{
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #13111A;
+      transform: rotate(-10deg);
+      @include max(575px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  
+}
+
+// collection section
+.nexto-collection-section{
+  background-color: var(--warning-500);
+}
+
+// roadmap section
+
+.nexto-roadmap-v2{
+  background: linear-gradient(180deg, #EEE6D0 -29.02%, rgba(255, 255, 255, 0) 160.21%);
+  .nexto-section-title {
+    max-width: 485px;
+    text-align: left;
+    margin: 0 0 75px;
+    @include max(991px) {
+      margin: 0 0 50px;
+    }
+    p{
+      padding: 0;
+    }
+}
+
+}

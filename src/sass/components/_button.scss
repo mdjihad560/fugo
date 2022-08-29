@@ -1,0 +1,61 @@
+// bootstrap button style
+
+.fugo-btn {
+  font-size: $button_font_size;
+  line-height: $buton_line_height;
+  border-radius: $buton_border_radius;
+  padding: $button_padding;
+  font-weight: $button_font_weight;
+  font-family: $button_font_family;
+  width: fit-content;
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  text-align: center;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  overflow: hidden;
+  color: var(--gray-800);
+  background-color: var(--warning-500);
+  &:hover{
+    color: var(--gray-10);
+    background-color: var(--gray-800);
+  }
+  &.fugo-header-btn{
+    padding: 11px 33px;
+    margin-left: 40px;
+    background-color: transparent;
+    border: 2px solid var(--gray-800);
+    &:hover{
+      color: var(--gray-10);
+      background-color: var(--gray-800);
+    }
+  }
+  &.disabled,
+  &:disabled {
+    opacity: 1;
+  }
+  &.d-block {
+    width: 100%;
+  }
+  &.pill {
+    border-radius: 999px;
+  }
+  &.btn-icon {
+    padding: 9px 24px;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+
+
+
+
+
+
+
