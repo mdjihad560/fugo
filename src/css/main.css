@@ -616,12 +616,12 @@
   .site-header .mobile-menu-trigger span {
     display: block;
     height: 2px;
-    background-color: #fff;
+    background-color: #13111A;
     width: 24px;
     position: relative;
   }
   .reveal-header .mobile-menu-trigger span {
-    background-color: #fff !important;
+    background-color: #13111A !important;
   }
   .site-header .mobile-menu-trigger span:before,
   .site-header .mobile-menu-trigger span:after {
@@ -630,24 +630,24 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: #13111A;
   }
   .reveal-header .mobile-menu-trigger span:before,
   .reveal-header .mobile-menu-trigger span:after {
-    background-color: #fff !important;
+    background-color: #13111A !important;
   }
   .dark-mode-texts .mobile-menu-trigger span {
-    background-color: #fff;
+    background-color: #13111A;
   }
   .dark-mode-texts .mobile-menu-trigger span:before,
   .dark-mode-texts .mobile-menu-trigger span:after {
-    background-color: #fff;
+    background-color: #13111A;
   }
   .site-header .mobile-menu-trigger span:before {
-    top: -6px;
+    top: -8px;
   }
   .site-header .mobile-menu-trigger span:after {
-    top: 6px;
+    top: 8px;
   }
   .site-header .item-right {
     align-items: center;
