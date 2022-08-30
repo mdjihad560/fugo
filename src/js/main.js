@@ -275,6 +275,39 @@ if(fugo_client_slider.is_exist()){
 
 }
 
+
+/*--------------------------------------------------------------
+NEXTO TEXT SLIDER
+--------------------------------------------------------------*/
+var fugo_testimonial_slider = $('.fugo-testimonial-slider');
+if(fugo_testimonial_slider.is_exist()){
+  fugo_testimonial_slider.slick({
+    infinite: true,
+    slidesToShow: 3, 
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+
+    ]
+  });
+
+}
+
 /*--------------------------------------------------------------
 NEXTO SWIPER SLIDER JS INIT
 ------------------------------------------------------------*/
@@ -301,17 +334,17 @@ $win.on('scroll', function () {
 /*--------------------------------------------------------------
 SCROLL EFFECT TWO JS INIT
 ------------------------------------------------------------*/
-var $rotateTwo = $('#rotateTwo');
+var $rotateTwo = $('#rotatetwo');
 var $win = $(window);
 $win.on('scroll', function () {
-  var right = 18-$win.scrollTop()*0.01;
+  var right = 16-$win.scrollTop()*0.01;
   $rotateTwo.css('transform', 'rotate(' + right + 'deg)');
 });
 
 /*--------------------------------------------------------------
 SCROLL EFFECT THREE JS INIT
 ------------------------------------------------------------*/
-var $rotateThree = $('#rotateThree');
+var $rotateThree = $('#rotatethree');
 var $win = $(window);
 $win.on('scroll', function () {
   var right = 36-$win.scrollTop()*0.01;
@@ -321,7 +354,7 @@ $win.on('scroll', function () {
 /*--------------------------------------------------------------
 MAGNIFIC POPUP JS INIT
 ------------------------------------------------------------*/
-var popup_youtube = $('.nexto-popup');
+var popup_youtube = $('.fugo-popup');
   if (popup_youtube.is_exist()){
       popup_youtube.magnificPopup({
       type: 'iframe',

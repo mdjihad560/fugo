@@ -9,3 +9,41 @@
         padding: 75px 0 56px;
     }
 }
+
+// app section
+.fugo-apps-section{
+    z-index: 0;
+    position: relative;
+    background-color: var(--warning-300);
+}
+.fugo-apps-thumb {
+    position: relative;
+    transform: rotate(-5deg);
+    margin-left: 60px;
+    @include max(1200px) {
+        margin: 0;
+    }
+    @include max(991px) {
+        margin: 0 0 50px;
+        text-align: center;
+    }
+}
+.fugo-hero-shape3 {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 6%;
+    @include max(1650px) {
+        left: -5%;
+    }
+    @include max(1199px) {
+        left: -12%;
+    }
+    @include max(991px) {
+        left: 5%;
+    }
+    @include max(767px) {
+        display: none;
+    }
+}
+

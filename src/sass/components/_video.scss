@@ -1,0 +1,54 @@
+.fugo-video-section{
+  background-color: var(--warning-400);
+}
+.fugo-video-thumb{
+  position: relative;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  @include max(991px) {
+    margin-bottom: 50px;
+  }
+}
+a.fugo-popup, 
+.fugo-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a.fugo-popup img{
+  -webkit-animation: rotate-animation 10s infinite linear;
+  -moz-animation: rotate-animation 10s infinite linear;
+  -o-animation: rotate-animation 10s infinite linear;
+  animation: rotate-animation 10s infinite linear;
+  &:hover{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+}
+.fugo-play-btn img{
+  animation: none!important;
+}
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.nexto-video-wrap .nexto-popup img {
+  -webkit-animation: rotate-animation 10s infinite linear;
+  -moz-animation: rotate-animation 10s infinite linear;
+  -o-animation: rotate-animation 10s infinite linear;
+  animation: rotate-animation 10s infinite linear;
+}
