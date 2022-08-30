@@ -1,0 +1,30 @@
+.fugo-section-title {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 75px;
+  @include max(991px) {
+    margin: 0 auto 45px;
+    max-width: 590px;
+  }
+  h2{
+    margin: 0;
+  }
+  &.title-large{
+    h2{
+      font-size: 68px;
+      line-height: 75px;
+      @include max(991px) {
+        font-size: 48px;
+        line-height: 60px;
+      }
+      @include max(767px) {
+        font-size: 40px;
+        line-height: 50px;
+      }
+      @include max(479px) {
+        font-size: 36px;
+        line-height: 46px;
+      }
+    }
+  }
+}
