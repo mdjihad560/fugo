@@ -1,0 +1,20 @@
+// client section
+.fugo-client-section{
+  padding: 75px 0 80px;
+  background-color: var(--gray-800);
+  @include max(767px) {
+    padding: 60px 0;
+  }
+  background-color: var(--gray-800);
+}
+.fugo-client-title{
+  margin-bottom: 50px;
+  text-align: center;
+  p{
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0;
+    letter-spacing: -0.5px;
+    color: var(--gray-10);
+  }
+}

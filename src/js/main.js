@@ -236,9 +236,9 @@ NEXTO TEXT SLIDER
 /*--------------------------------------------------------------
 NEXTO TEXT SLIDER
 --------------------------------------------------------------*/
-var nexto_client_slider = $('.nexto-client-slider');
-if(nexto_client_slider.is_exist()){
-  nexto_client_slider.slick({
+var fugo_client_slider = $('.fugo-client-slider');
+if(fugo_client_slider.is_exist()){
+  fugo_client_slider.slick({
   infinite: true,
   slidesToShow: 5, 
   slidesToScroll: 1,
