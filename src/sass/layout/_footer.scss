@@ -1,8 +1,6 @@
 
 footer.fugo-footer-section{
   background-color: var(--gray-800);
-}
-.fugo-footer-top {
   padding: 100px 0 95px;
   @include max(991px){
     padding: 80px 0;
@@ -67,6 +65,7 @@ footer.fugo-footer-section{
         &:hover{
           opacity: 1;
           padding-left: 10px;
+          color: var(--warning-500);
         }
       }
     }
@@ -77,38 +76,98 @@ footer.fugo-footer-section{
 
 // footer two
 footer.fugo-foote2-section {
-  background-size: cover;
-  background-position: center;
+  background-color: var(--gray-800);
   .fugo-footer-top{
-    padding: 120px 0;
+    padding: 110px 0;
     border: none;
     @include max(991px) {
-      padding: 70px 0;
+      padding: 90px 0;
     }
     @include max(767px) {
-      padding: 50px 0 ;
+      padding: 70px 0 ;
     }
   }
   .fugo-default-content {
-    max-width: 590px;
+    max-width:720px;
     text-align: center;
     margin: 0 auto;
     position: relative;
+    h2, p{
+      color: var(--gray-10);
+    }
+    p{
+      opacity: 0.8;
+      padding: 0 30px;
+    }
+    .fugo-app-btn-wrap{
+      margin: 55px 0 0;
+      @include max(991px) {
+        margin-top: 30px 0 0;
+      }
+    }
   }
+  
+}
 
+.fugo-footer-middle{
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  .fugo-footer-logo{
+    @include max(991px) {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+  }
+  .fugo-social-icon2{
+    text-align: right;
+    @include max(991px) {
+      text-align: center;
+    }
+  }
+}
+.fugo-footer-menu2{
+  @include max(991px) {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  ul{
+    li{
+      margin: 0 15px;
+      display: inline-block;
+      &:first-child{
+        margin-left: 0;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+      a{
+        font-weight: 600;
+        color: var(--gray-10);
+        transition: all 0.4s;
+        &:hover{
+          color: var(--success-500);
+        }
+      }
+    }
+  }
+}
+.fugo-email {
+  font-weight: 600;
+  color: var(--gray-10);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  img{
+    margin-right: 10px;
+  }
+  @include max(991px) {
+    justify-content: center;
+  }
 }
 .fugo-footer-bottom {
-  display: flex;
-  justify-content: center;
   padding: 35px 0;
-  @include max(767px){
-    display: block;
+  @include max(767px) {
     text-align: center;
-  }
-  @include max(575px){
-    display: block;
-    text-align: center;
-    padding: 10px 0 35px;
   }
   p{
     font-size: 16px;
@@ -121,6 +180,10 @@ footer.fugo-foote2-section {
     }
   }
   .fugo-footer-menu{
+    text-align: right;
+    @include max(767px) {
+      text-align: center;
+    }
     @include max(575px){
       margin-bottom: 0;
     }
@@ -129,6 +192,8 @@ footer.fugo-foote2-section {
         padding-right: 20px;
         display: inline-block;
         position: relative;
+        opacity: 0.6;
+        margin: 0;
         &::after{
           content: " ";
           top: 10px;
@@ -139,6 +204,9 @@ footer.fugo-foote2-section {
           position: absolute;
           background: #FFFFFF;
           opacity: 0.8;
+        }
+        &:last-child{
+          padding-right: 0;
         }
         &:last-child:after{
           content: none;

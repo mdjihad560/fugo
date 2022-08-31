@@ -191,3 +191,109 @@ a.fugo-app-btn{
   }
 }
 
+
+// v2
+.fugo-hero-section2{
+  z-index: 0;
+  overflow: hidden;
+  padding: 188px 0 430px;
+  position: relative;
+  background-color: var(--warning-200);
+  @include max(991px) {
+    padding: 160px 0 405px;
+  }
+  @include max(767px) {
+    padding: 150px 0 190px;
+  }
+  @include max(479px) {
+    padding: 120px 0 190px;
+  }
+  @include max(767px) {
+    &:after {
+      content: "";
+      left: 0;
+      top: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      opacity: 0.15;
+      position: absolute;
+      background-color: #000;
+    }
+  }
+  &:before {
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    background: linear-gradient(180deg, #724FE5 6.25%, #32E7B1 31.77%, rgba(255, 255, 255, 0) 55.21%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    border-radius: 50% 50% 0 0;
+    width: 150vw;
+    left: -25vw;
+    @include max(767px) {
+      border-radius: 0;
+    }
+  }
+}
+.fugo-hero-content2{
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+  p{
+    padding: 0 70px;
+    @include max(550px) {
+      padding: 0;
+    }
+  }
+}
+.fugo-hero-btn-wrap{
+  margin-top: 60px;
+  @include max(991px) {
+    margin-top: 40px;
+  }
+  .fugo-btn{
+    margin: 7px;
+  }
+}
+
+.fugo-single-thumb {
+  text-align: center;
+  margin-top: -320px;
+  z-index: 1;
+  position: relative;
+  @include max(767px) {
+    margin-top: -120px;
+  }
+}
+
+.fugo-single-thumb-section{
+  padding: 0 0 115px;
+  background-color: var(--warning-200);
+  @include max(991px) {
+    padding: 0 0 100px;
+  }
+  @include max(767px) {
+    padding: 0 0 80px;
+  }
+}
+
+.fugo-hero-shape4 {
+  position: absolute;
+  top: 15%;
+  left: 3%;
+  @include max(767px) {
+    display: none;
+  }
+}
+.fugo-hero-shpae5 {
+  position: absolute;
+  right: 5%;
+  bottom: 25%;
+  @include max(767px) {
+    display: none;
+  }
+}

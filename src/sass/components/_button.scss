@@ -33,7 +33,34 @@
       color: var(--gray-10);
       background-color: var(--gray-800);
     }
+    &.fugo-header-btn2{
+      border-radius: 100px;
+      border: 2px solid var(--success-500);
+      background-color: var(--success-500);
+      &:hover{
+        border: 2px solid var(--gray-800);
+        background-color: var(--gray-800);
+      }
+    }
   }
+  &.fugo-round-btn{
+    width: 200px;
+    padding: 18px;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 2px solid var(--gray-800);
+    &:hover{
+      background-color: var(--gray-800);
+    }
+    &.active{
+      border: 2px solid var(--success-500);
+      background-color: var(--success-500);
+      &:hover{
+        color: var(--gray-800);
+      }
+    }
+  }
+  
   &.disabled,
   &:disabled {
     opacity: 1;

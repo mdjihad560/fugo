@@ -26,6 +26,12 @@
     @include max(991px) {
         margin: 0 0 50px;
         text-align: center;
+        transform: none !important;
+    }
+}
+.fugo-apps-thumb{
+    &.fugo-apps-thumb2{
+        transform: rotate(-5deg)
     }
 }
 .fugo-hero-shape3 {
