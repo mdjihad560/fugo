@@ -205,9 +205,9 @@ if( nexto_slider_two.is_exist()){
 /*--------------------------------------------------------------
 NEXTO TEXT SLIDER
 --------------------------------------------------------------*/
-  var nexto_text_slider = $('.nexto-text-slider');
-  if(nexto_text_slider.is_exist()){
-    nexto_text_slider.slick({
+  var fugo_text_slider = $('.fugo-text-slider1');
+  if(fugo_text_slider.is_exist()){
+    fugo_text_slider.slick({
     infinite: true,
     slidesToShow: 2, 
     slidesToScroll: 1,
@@ -230,6 +230,38 @@ NEXTO TEXT SLIDER
 
     ]
   });
+
+}
+
+/*--------------------------------------------------------------
+NEXTO TEXT SLIDER
+--------------------------------------------------------------*/
+var fugo_text_slider2 = $('.fugo-text-slider2');
+if(fugo_text_slider2.is_exist()){
+  fugo_text_slider2.slick({
+  rtl: true,
+  infinite: true,
+  slidesToShow: 2, 
+  slidesToScroll: 1,
+  arrows: false,
+  dots: false,
+  autoplay: true , 
+  autoplaySpeed: 0,
+  speed: 10000,
+  cssEase: 'linear',
+  pauseOnHover:true,
+  adaptiveHeight: true,
+  responsive: [
+  {
+    breakpoint: 1400,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    }
+  }
+
+  ]
+});
 
 }
 

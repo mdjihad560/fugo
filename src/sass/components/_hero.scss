@@ -157,13 +157,13 @@ a.fugo-app-btn{
     right: 0!important;
   }
 }
-.fugo-hero-shape1 {
+.fugo-shape1 {
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: -1;
 }
-.fugo-hero-shape2 {
+.fugo-shape2 {
   position: absolute;
   top: -20%;
   left: -25%;
@@ -271,17 +271,10 @@ a.fugo-app-btn{
 }
 
 .fugo-single-thumb-section{
-  padding: 0 0 115px;
   background-color: var(--warning-200);
-  @include max(991px) {
-    padding: 0 0 100px;
-  }
-  @include max(767px) {
-    padding: 0 0 80px;
-  }
 }
 
-.fugo-hero-shape4 {
+.fugo-shape4 {
   position: absolute;
   top: 15%;
   left: 3%;
@@ -289,7 +282,7 @@ a.fugo-app-btn{
     display: none;
   }
 }
-.fugo-hero-shpae5 {
+.fugo-shape5 {
   position: absolute;
   right: 5%;
   bottom: 25%;
