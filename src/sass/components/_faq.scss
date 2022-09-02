@@ -1,22 +1,48 @@
 .fugo-faq-section{
   background-color: var(--warning-300);
 }
-.fugo-accordion-wrap {
-  margin-top: 40px;
-  @include max(991px) {
+.fugo-accordion {
+  &-wrap{
     margin-top: 40px;
+    @include max(991px) {
+      margin-top: 40px;
+    }
   }
-}
-.fugo-accordion-item{
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid var(--gray-800);
-  &:last-child{
-    margin: 0;
-    padding: 0;
-    border: none;
+  &-item{
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--gray-800);
+    &:last-child{
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
   }
+  &-wrap2{
+    .fugo-accordion-item{
+      display: flex;
+      margin-bottom: 24px;
+      padding-bottom: 24px;
+      align-items: center;
+      justify-content: space-between;
+      &:last-child{
+        padding: 0;
+        margin: 0;
+      }
+      h4{
+        margin: 0;
+        font-weight: 700;
+        font-family: $body-font;
+        @include max(1199px) {
+          font-size: 20px;
+        }
+      }
+    }
+    
+  }
+  
 }
+
 
 a.fugo-faq-btn {
   font-size: 16px;

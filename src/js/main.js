@@ -221,7 +221,7 @@ NEXTO TEXT SLIDER
     adaptiveHeight: true,
     responsive: [
     {
-      breakpoint: 1400,
+      breakpoint: 991,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -253,7 +253,7 @@ if(fugo_text_slider2.is_exist()){
   adaptiveHeight: true,
   responsive: [
   {
-    breakpoint: 1400,
+    breakpoint: 991,
     settings: {
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -330,6 +330,32 @@ if(fugo_testimonial_slider.is_exist()){
     },
     {
       breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+
+    ]
+  });
+
+}
+
+/*--------------------------------------------------------------
+NEXTO TEXT SLIDER
+--------------------------------------------------------------*/
+var fugo_testimonial_slider2 = $('.fugo-testimonial-slider2');
+if(fugo_testimonial_slider2.is_exist()){
+  fugo_testimonial_slider2.slick({
+    infinite: true,
+    slidesToShow: 2, 
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+    {
+      breakpoint: 991,
       settings: {
         slidesToShow: 1,
       }
