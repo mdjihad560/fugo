@@ -37,6 +37,25 @@
   }
 }
 
+.fugo-social-icon2{
+  ul{
+    li{
+      margin: 0 2px;
+      display: inline-block;
+      &:first-child{
+        margin-left: 0;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+      a{
+        path{
+          fill: var(--gray-800);
+        }
+      }
+    }
+  }
+}
 
 
 

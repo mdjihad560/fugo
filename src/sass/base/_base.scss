@@ -38,6 +38,8 @@ body {
   overflow-x: hidden;
   background-color: #fff;
   counter-reset: my-sec-counter;
+  font-size: 18px;
+  line-height: 30px;
   &.styleguide {
     background-color: #dcdfe8;
   }

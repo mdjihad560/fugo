@@ -1,0 +1,77 @@
+.fugo-counter{
+  &-section{
+    padding: 80px 0;
+    .fugo-default-content{
+      @include max(1199px) {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+  }
+  &-wrap{
+    display: flex;
+    text-align: center;
+    @include max(1199px) {
+      margin-bottom: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  &-data{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    @include max(1399px) {
+      padding: 25px;
+      width: 200px;
+      height: 200px;
+    }
+    @include max(1199px) {
+      padding: 30px;
+      width: 220px;
+      height: 220px;
+    }
+
+    &:nth-child(1) {
+      // @include max(1199px) {
+      //   left: 30px;
+      // }
+    }
+    &:nth-child(2) {
+      margin-left: -30px;
+      @include max(479px) {
+        margin-left: 0;
+        margin-top: -30px;
+      }
+      @include max(479px) {
+        margin-top: -30px;
+      }
+    }
+    &:nth-child(3) {
+      margin-left: -30px;
+      @include max(767px) {
+        margin-left: 0;
+        margin-top: -58px;
+      }
+      @include max(479px) {
+        margin-top: -30px;
+      }
+    }
+    h2{
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff;
+    }
+  }
+}

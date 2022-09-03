@@ -1,21 +1,53 @@
-.breadcrumb-title {
-  font-size: 16px;
-  line-height: 23px;
-  font-weight: 600;
-  margin-bottom: 8px;
+.fugo-breadcrumb-section{
+  padding: 188px 0 120px;
+  position: relative;
+  background-color: var(--warning-400);
+  @include max(991px) {
+    padding: 150px 0 80px;
+  }
+  @include max(767px) {
+    padding: 130px 0 60px;
+  }
 }
-.breadcrumbs{
-  padding: 200px 0;
+.breadcrumbs {
+  text-align: center;
 }
+
+
 .breadcrumb {
-  margin: 0px;
-  
+  margin: 45px 0 0px;
+  justify-content: center;
+  @include max(991px) {
+    margin: 25px 0 0px;
+  }
   .breadcrumb-item {
-    font-size: 14px;
-    line-height: 20px;
-    color: var(--gray-900);
+    color: var(--gray-800);
     a {
-      color: var(--gray-600);
+      color: var(--gray-800);
+    }
+    &.active{
+      font-weight: 600;
     }
   }
 }
+
+.fugo-shape8 {
+  position: absolute;
+  top: 32%;
+  -webkit-animation: float 3s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
+  @include max(991px) {
+    display: none;
+  }
+}
+.fugo-shape9 {
+  position: absolute;
+  right: 4%;
+  bottom: 14%;
+  -webkit-animation: float 3s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
+  @include max(991px) {
+    display: none;
+  }
+}
+

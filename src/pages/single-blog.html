@@ -1,0 +1,22 @@
+{% extends "layout/layout.html" %}
+{% set page_title = "Blog Single" %}
+ {% block content %}
+
+{% include "../templates/layout/header-footer/header-one.html" %} 
+
+<div class="fugo-breadcrumb-section">
+  <div class="container">
+    {% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
+  </div>
+  <div class="fugo-shape8">
+    <img src="assets/images/shape/shape7.png" alt="">
+  </div>
+  <div class="fugo-shape9">
+    <img src="assets/images/shape/shape8.png" alt="">
+  </div>
+</div>
+<!-- End breadcrumb -->
+
+  {% include "../templates/layout/header-footer/footer-one.html" %} 
+  
+{% endblock %}

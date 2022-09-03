@@ -1,21 +1,5 @@
-// feature section
-.fugo-feature-section{
-    padding: 110px 0 96px;
-    background-color: var(--warning-400);
-    @include max(991px) {
-        padding: 95px 0 76px;
-    }
-    @include max(767px) {
-        padding: 75px 0 56px;
-    }
-}
 
 // app section
-.fugo-apps-section{
-    z-index: 0;
-    position: relative;
-    background-color: var(--warning-300);
-}
 .fugo-apps-thumb {
     position: relative;
     transform: rotate(-5deg);

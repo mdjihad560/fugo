@@ -278,6 +278,8 @@ a.fugo-app-btn{
   position: absolute;
   top: 15%;
   left: 3%;
+  -webkit-animation: float 4s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
   @include max(767px) {
     display: none;
   }
@@ -286,7 +288,33 @@ a.fugo-app-btn{
   position: absolute;
   right: 5%;
   bottom: 25%;
+  -webkit-animation: float 3s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
   @include max(767px) {
     display: none;
+  }
+}
+
+@-webkit-keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
   }
 }

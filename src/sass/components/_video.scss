@@ -1,6 +1,4 @@
-.fugo-video-section{
-  background-color: var(--warning-400);
-}
+
 .fugo-video-thumb{
   position: relative;
   img{
@@ -61,10 +59,6 @@ a.fugo-popup img{
 }
 
 // video 2
-
-.fugo-video-section2 {
-  background-color: var(--warning-200);
-}
 .fugo-video-thumb2{
   border-radius: 10px;
   overflow: hidden;
@@ -81,4 +75,8 @@ a.fugo-popup img{
     border-radius: 10px;
     transform: matrix(1, 0, 0, -1, 0, 0);
   }
+}
+
+.fugo-video-thumb3{
+  margin: 0;
 }

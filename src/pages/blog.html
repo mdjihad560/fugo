@@ -1,0 +1,85 @@
+{% extends "layout/layout.html" %}
+{% set page_title = "Blog & Resources" %}
+ {% block content %}
+
+{% include "../templates/layout/header-footer/header-one.html" %} 
+
+<div class="fugo-breadcrumb-section">
+  <div class="container">
+    {% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
+  </div>
+  <div class="fugo-shape8">
+    <img src="assets/images/shape/shape7.png" alt="">
+  </div>
+  <div class="fugo-shape9">
+    <img src="assets/images/shape/shape8.png" alt="">
+  </div>
+</div>
+<!-- End breadcrumb -->
+
+<div class="fugo-blog-section fugo-section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="fugo-blog-card">
+              <div class="fugo-blog-thumb">
+                  <a href="single-blog.html">
+                    <img src="assets/images/all-img/blog/blog1.png" alt="">
+                  </a>
+              </div>
+              <div class="fugo-blog-content">
+                <div class="fugo-blog-meta">
+                  <ul>
+                    <li><a href="">Article</a></li>
+                    <li><a href="">August 26, 2022</a></li>
+                  </ul>
+                </div>
+                <h5>
+                  <a href="single-blog.html">
+                    Do you need a blockchain project? Six very easy steps to verify it as wise
+                  </a>
+                </h5>
+                <p>You may be fascinated by blockchain technology, hearing about all those ground-breaking...</p>
+                <a class="fugo-icon-btn" href="">Read More <img src="assets/images/svg/arrow-black-right.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="fugo-blog-card">
+              <div class="fugo-blog-thumb">
+                  <a href="single-blog.html">
+                    <img src="assets/images/all-img/blog/blog2.png" alt="">
+                  </a>
+              </div>
+              <div class="fugo-blog-content">
+                <div class="fugo-blog-meta">
+                  <ul>
+                    <li><a href="">Article</a></li>
+                    <li><a href="">August 26, 2022</a></li>
+                  </ul>
+                </div>
+                <h5>
+                  <a href="single-blog.html">
+                    How to build NFT marketplace here give a step-by-step guide to help you
+                  </a>
+                </h5>
+                <p>An NFT marketplace is an online platform based on blockchain that allows selling and buying...</p>
+                <a class="fugo-icon-btn" href="">Read More <img src="assets/images/svg/arrow-black-right.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        sidebar
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End blog section -->
+
+  {% include "../templates/layout/header-footer/footer-one.html" %} 
+  
+{% endblock %}

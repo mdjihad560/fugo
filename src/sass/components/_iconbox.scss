@@ -27,6 +27,7 @@
   }
 }
 .fugo-icon-btn{
+  font-size: 16px;
   font-weight: 700;
   color: var(--gray-800);
   &:hover{
@@ -42,9 +43,6 @@
 }
 
 // icon box 2
-.fugo-service-section{
-  background-color: var(--warning-200);
-}
 .fugo-iconbox{
   &-wrap2{
     padding: 30px;
@@ -58,9 +56,6 @@
 }
 
 // feature section 2
-.fugo-feature-section2{
-  background-color: var(--gray-800);
-}
 .fugo-iconbox{
   &-wrap3{
     padding: 40px;
@@ -85,5 +80,20 @@
     p{
       opacity: 0.8;
     }
+  }
+}
+
+// icon box about page
+.fugo-iconbox{
+  &-wrap4{
+    padding: 29px;
+    text-align: center;
+    transition: all 0.4s;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(19, 17, 26, 0.1);
+  }
+  &-icon4{
+    margin-bottom: 30px;
   }
 }
