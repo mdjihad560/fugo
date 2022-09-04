@@ -2,7 +2,7 @@
   &-card{
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #E1E1E1;
+    border: 1px solid var(--gray-700);
     transition: all 0.4s;
     margin-bottom: 24px;
     border-radius: 10px;
@@ -61,6 +61,7 @@
   }
   &-content{
     h5{
+      margin-bottom: 7px;
       a{
         color: var(--gray-800);
       }
@@ -69,5 +70,413 @@
       font-size: 16px;
       margin-bottom: 20px;
     }
+  }
+}
+
+// sidebar
+.fugo-blog-sidebar {
+  border: 1px solid var(--gray-700);
+  border-radius: 10px;
+  padding: 30px;
+  @include max(991px) {
+    margin-top: 40px;
+  }
+}
+.fugo-product-search{
+  position: relative;
+}
+#fugo-search-btn {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.fugo-product-search{
+  input{
+    padding: 10px 35px 10px 20px!important;
+    border-radius: 4px;
+  }
+}
+.fugo-sidebar{
+  &-item{
+    margin-bottom: 35px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &-title{
+      margin-bottom: 25px;
+      h5{
+        margin: 0;
+        font-size: 18px;
+        line-height: 38px;
+        font-weight: 600;
+        display: inline-block;
+        font-family: $body-font;
+        border-bottom: 2px solid var(--gray-800);
+      }
+    }
+  }
+}
+
+.fugo-categories{
+  ul{
+    li{
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(19, 17, 26, 0.1);
+      &:last-child{
+        padding: 0;
+        margin: 0;
+        border: none;
+      }
+      a{
+        display: block;
+        color: var(--gray-800);
+        transition: all 0.4;
+        &:hover{
+          color: var(--warning-500);
+        }
+      }
+    }
+  }
+}
+
+.fugo-recent-post-item{
+  margin-bottom: 15px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  a{
+    display: block;
+    img{
+      margin-bottom: 18px;
+      border-radius: 3px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .fugo-blog-meta{
+    margin-bottom: 10px;
+  }
+  h6{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    font-family: $body-font;
+    a{
+      color: var(--gray-800);
+    }
+  }
+}
+
+.fugo-tags{
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li{
+      flex: 0 0 48%;
+      margin-bottom: 15px;
+      a{
+        display: block;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 3px;
+        text-align: center;
+        padding: 13px 10px;
+        line-height: 24px;
+        color: var(--gray-800);
+        border-radius: 3px;
+        transition: all 0.4s;
+        background-color: rgba(2, 2, 30, 0.03);
+        &:hover{
+          background-color: var(--warning-500);
+        }
+      }
+    }
+  }
+}
+
+// blog single
+
+.fugo-blog-single{
+  &-wrap{
+    margin-right: 40px;
+    @include max(1199px) {
+      margin: 0;
+    }
+    a{
+      display: block;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .fugo-blog-meta{
+      margin-bottom: 35px;
+    }
+    ul{
+      li{
+        span{
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+}
+
+.fugo-user{
+  &-wrap{
+    margin: 40px 0;
+    padding: 29px;
+    display: flex;
+    border-radius: 10px;
+    position: relative;
+    background-color: var(--warning-300);
+    @include max(767px) {
+      display: block;
+    }
+  }
+  &-thumb{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    overflow: hidden;
+    margin-right: 15px;
+    border-radius: 100%;
+    @include max(767px) {
+      margin: 0 0 15px;
+    }
+    img{
+      object-fit: cover;
+    }
+  }
+  &-data{
+    ul{
+      margin-bottom: 15px;
+      li{
+        font-size: 16px;
+        display: inline-block;
+        font-weight: 700;
+        padding-right: 20px;
+        position: relative;
+        &:last-child{
+          padding-right: 0;
+        }
+        &:before {
+          content: "";
+          right: 4px;
+          top: 13px;
+          width: 5px;
+          height: 5px;
+          border-radius: 50px;
+          position: absolute;
+          background-color: rgba(19, 17, 26, 0.8);
+        }
+        &:last-child:before{
+          content: none;
+        }
+        span{
+          font-weight: 400;
+          font-size: 14px;
+        }
+      }
+    }
+    p{
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+.fugo-blog-post {
+  &-wrap{
+    padding: 40px 0 35px;
+    border-top: 1px solid rgba(19, 17, 26, 0.1);
+    border-bottom: 1px solid rgba(19, 17, 26, 0.1);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    @include max(767px) {
+      display: block;
+    }
+  }
+  &-column{
+    flex: 0 0 37%;
+    h6{
+      font-size: 18px;
+      line-height: 26px;
+      margin: 0;
+    }
+    &.post-column-right{
+      text-align: right;
+      @include max(767px) {
+        margin-top: 30px;
+      }
+      .fugo-blog-post-arrow{
+        justify-content: flex-end;
+      }
+      .fugo-blog-post-arrow-icon{
+        margin-right: 0;
+        margin-left: 15px;
+      }
+    }
+  }
+  &-arrow{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    &:hover .fugo-blog-post-arrow-icon{
+      background-color: var(--warning-500);
+      border: 1px solid var(--warning-500);
+    }
+    &:hover .fugo-blog-post-arrow-data p{
+      color: var(--gray-800);
+    }
+    &-icon{
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      flex-shrink: 0;
+      margin-right: 15px;
+      transition: all 0.4s;
+      border: 1px solid rgba(19, 17, 26, 0.1);
+      
+      img{
+        margin: 0;
+        width: 18px;
+        height: auto;
+      }
+    }
+    &-data{
+      p{
+        font-weight: 600;
+        color: rgba(19, 17, 26, 0.8);
+      }
+    }
+  }
+  
+}
+
+.fugo-comment{
+  &-section{
+    h5{
+      margin-bottom: 40px;
+    }
+  }
+  &-wrap{}
+  &-item{
+    display: flex;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    position: relative;
+    border-bottom: 1px solid rgba(19, 17, 26, 0.1);
+    &:last-child{
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    &:nth-child(2) {
+      padding-left: 90px;
+      @include max(767px) {
+        padding-left: 0;
+      }
+    }
+  }
+  &-author{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-right: 20px;
+    &.author2{
+      width: 50px;
+      height: 50px;
+    }
+    img{
+      object-fit: cover;
+    }
+    &-data{
+      margin-right: 90px;
+      @include max(767px) {
+        margin-right: 0;
+      }
+      h6{
+        font-size: 14px;
+        font-weight: 600;
+        font-family: $body-font;
+        margin-bottom: 5px;
+      }
+      span{
+        display: block;
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+a.comment-reply {
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--gray-800);
+}
+
+.fugo-input-field {
+  &-section{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 80px rgb(0 0 0 / 6%);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 40px;
+    h5{
+      margin-bottom: 30px;
+    }
+    .fugo-input-field {
+      textarea{
+        height: 250px;
+        @include max(991px) {
+          height: 150px;
+        }
+        @include max(767px) {
+          height: 100px;
+        }
+      }
+    }
+    button#fugo-input-submit {
+      margin-top: 16px;
+      @include max(767px) {
+        margin-top: 0;
+      }
+     
+    }
+  }
+  margin-bottom: 20px;
+  
+  
+}
+
+button#fugo-input-submit {
+  width: 196px;
+  height: 55px;
+  left: 182px;
+  top: 4119px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.4s;
+  background-color: var(--warning-500);
+  &:hover{
+    color: var(--warning-500);
+    background-color: var(--gray-800);
   }
 }

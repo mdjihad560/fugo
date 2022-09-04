@@ -57,6 +57,28 @@
   }
 }
 
+.fugo-social-icon3{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  @include max(767px) {
+    top: 50px;
+  }
+  ul{
+    li{
+      display: inline-block;
+      margin-right: 10px;
+      &:last-child{
+        margin-right: 0;
+      }
+      a{
+        path{
+          fill: var(--gray-800);
+        }
+      }
+    }
+  }
+}
 
 
 
