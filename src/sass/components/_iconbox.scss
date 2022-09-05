@@ -105,3 +105,41 @@
     margin-bottom: 30px;
   }
 }
+
+.fugo-iconbox{
+  &-wrap6{
+    text-align: center;
+    padding: 0 22px;
+    margin-bottom: 24px;
+    @include max(1199px) {
+      padding: 0 5px;
+    }
+    @include max(767px) {
+      padding: 0 20px;
+    }
+  }
+  &-icon6{
+    margin-bottom: 30px;
+  }
+  
+}
+
+.fugo-iconbox-border{
+  position: relative;
+  &:before{
+    content: "";
+    top: 30px;
+    left: 50%;
+    width: calc(100% - 30%);
+    height: 1px;
+    position: absolute;
+    transform: translateX(-50%);
+    border: 1px dashed rgba(19, 17, 26, 0.1);
+    @include max(991px) {
+      width: calc(100% - 50%);
+    }
+    @include max(767px) {
+      content: none;
+    }
+  }
+}
