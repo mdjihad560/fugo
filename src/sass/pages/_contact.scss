@@ -62,3 +62,11 @@
     height: 300px;
   }
 }
+
+.fugo-center-btn{
+  text-align: center;
+  margin-top: 80px;
+  @include max(991px) {
+    margin-top: 40px;
+  }
+}

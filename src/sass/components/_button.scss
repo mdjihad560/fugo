@@ -60,7 +60,10 @@
       }
     }
   }
-  
+  &.small-btn{
+    border-radius: 10px;
+    padding: 15.5px 41px;
+  }
   &.disabled,
   &:disabled {
     opacity: 1;

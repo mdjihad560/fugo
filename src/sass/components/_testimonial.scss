@@ -44,7 +44,8 @@
     &-data{
       h5{
         font-size: 18px;
-        margin-bottom: 5px;
+        margin-bottom: 0;
+        line-height: 1;
         font-family: $body-font;
       }
       span{
@@ -99,5 +100,38 @@
   text-align: center;
   @include max(1199px) {
     margin-top: 50px;
+  }
+}
+
+// testimonial page
+.fugo-testimonial{
+  &-card3{
+    padding: 40px;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    border: 1px solid rgba(2, 2, 30, 0.1);
+    @include max(991px) {
+      padding: 30px;
+    }
+    ul{
+      margin-bottom: 30px;
+      li{
+        display: inline-block;
+      }
+    }
+    p{
+      color: var(--gray-800);
+    }
+    .fugo-testimonial-author-wrap{
+      margin: 0;
+    }
+  }
+  &-author{
+    &-data3{
+      h5{
+        line-height: 1;
+        margin: 0 0 7px;
+      }
+    }
   }
 }
