@@ -1,7 +1,7 @@
 .fugo-iconbox{
   &-wrap{
     border-radius: 3px;
-    padding: 40px;
+    padding: 39px;
     display: flex;
     transition: all 0.4s;
     margin-bottom: 24px;
@@ -13,6 +13,14 @@
     }
     &:hover{
       background-color: var(--warning-300);
+    }
+    &.fugo-iconbox-wrap5{
+      border: 1px solid rgba(19, 17, 26, 0.1);
+      &:hover{
+        background: #FFFFFF;
+        border: 1px solid transparent;
+        box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.06);
+      }
     }
   }
   &-icon{

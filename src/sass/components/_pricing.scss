@@ -1,0 +1,204 @@
+/*---------------------------------------------------
+PRICING SECTION
+----------------------------------------------------*/
+
+
+.pricing-btn {
+  margin-bottom: 60px;
+}
+[data-pricing-dynamic][data-value-active="yearly"] .dynamic-value:before {
+display: inline-block;
+content: attr(data-yearly);
+}
+[data-pricing-dynamic][data-value-active="yearly"] [data-pricing-trigger] {
+background: #ff5722;
+}
+
+[data-pricing-dynamic][data-value-active="yearly"] [data-pricing-trigger] span {
+left: calc(100% - 33px);
+}
+[data-pricing-dynamic][data-value-active="monthly"] .dynamic-value:before {
+display: inline-block;
+content: attr(data-monthly);
+}
+.dynamic-value:before {
+  display: inline-block;
+  content: attr(data-active);
+}
+.static-value:before {
+  display: inline-block;
+  content: attr(data-active);
+}
+.pricing-btn .btn-toggle {
+  position: relative;
+  width: 65px !important;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--gray-800) !important;
+  background-image: url(../images/all-img/service/circle-bg.png);
+}
+.pricing-btn .btn-toggle:focus {
+  border: none !important;
+  outline: none;
+  box-shadow: none;
+  background-color: var(--gray-800) !important;
+  background-image: url(../images/all-img/service/circle-bg.png);
+}
+.pricing-btn .btn-toggle:checked {
+  border: none !important;
+  background-color: var(--gray-800) !important;
+  background-image: url(../images/all-img/service/circle-bg.png);
+}
+.pricing-btn label {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 24px;
+  margin: 0 20px;
+  color: var(--gray-800);
+  @include max(767px) {
+    margin: 0 15px;
+  }
+}
+// .pricing-btn .badge {
+//   margin-bottom: 0;
+//   color: #262729;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   min-width: 96px;
+//   height: 30px;
+//   border-radius: 15px;
+//   font-size: 13px;
+//   font-weight: 500;
+//   letter-spacing: normal;
+//   line-height: 22px;
+// }
+
+
+.fugo-pricing{
+  &-wrap{
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    @include max(991px) {
+      padding: 30px;
+    }
+    &.active{
+      border-radius: 10px;
+      background-color: var(--gray-800);
+      .fugo-pricing-header{
+        h5, p{
+          color: #fff;
+        }
+        p{
+          opacity: 0.8;
+        }
+      }
+      .fugo-price, 
+      p.bottom_text, 
+      .fugo-pricing-currency{
+        color: #fff;
+      }
+      .fugo-pricing-body{
+        ul{
+          li{
+            color: #fff;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+  &-header{
+    margin-bottom: 15px;
+    p{
+      font-size: 16px;
+      line-height: 24px;
+      margin-right: 90px;
+    }
+  }
+  &-price{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 35px;
+  }
+  &-currency{
+    line-height: 1;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    bottom: 5px;
+  }
+  &-body{
+    ul{
+      li{
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 11px;
+        img{
+          margin-right: 14px;
+        }
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+    
+  }
+}
+.fugo-price{
+  line-height: 1;
+  margin: 0;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: $body-font;
+  color: var(--gray-800);
+}
+p.bottom_text{
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  bottom: 5px;
+  color: var(--gray-800);
+}
+a.fugo-pricing-btn{
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  color: var(--gray-800);
+  border: 2px solid var(--gray-800);
+  transition: all 0.4s;
+  margin-bottom: 40px;
+  &:hover{
+    border: 2px solid var(--warning-500);
+    background-color: var(--warning-500);
+  }
+  &.active{
+    border: 2px solid var(--warning-500);
+    background-color: var(--warning-500);
+  }
+}
+
+.fugo-pricing-label {
+  width: 178px;
+  top: 27px;
+  right: -42px;
+  font-weight: 600;
+  text-align: center;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(44.51deg);
+  position: absolute;
+  background-color: var(--warning-500);
+}
