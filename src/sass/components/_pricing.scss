@@ -5,6 +5,9 @@ PRICING SECTION
 
 .pricing-btn {
   margin-bottom: 60px;
+  @include max(991px) {
+    margin-bottom: 30px;
+  }
 }
 [data-pricing-dynamic][data-value-active="yearly"] .dynamic-value:before {
 display: inline-block;
@@ -98,6 +101,58 @@ content: attr(data-monthly);
     }
     &.fugo-pricing-wrap{
       margin-bottom: 24px;
+    }
+    &.fugo-pricing-wrap3{
+      padding: 30px;
+      background: #FFFFFF;
+      border: 1px solid rgba(19, 17, 26, 0.1);
+      border-radius: 10px;
+      transition: all 0.4s;
+      &:hover{
+        border-radius: 10px;
+        background: #FFFFFF;
+        border: 1px solid #fff;
+        box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.06);
+      }
+      &:hover a.fugo-pricing-btn{
+          border: 2px solid var(--warning-500);
+          background-color: var(--warning-500);
+      }
+      a.fugo-pricing-btn{
+        margin: 0;
+        padding: 13.5px;
+      }
+      .fugo-pricing-price{
+        margin-bottom: 15px;
+      }
+      p{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 25px;
+      }
+      p.bottom_text{
+        margin: 0;
+      }
+      .fugo-pricing-body {
+        border-top: 1px solid rgba(19, 17, 26, 0.1);
+        padding: 25px 0 35px;
+        span{
+          font-size: 16px;
+          display: block;
+          margin-bottom: 18px;
+          font-weight: 600;
+        }
+        ul{
+          li{
+            font-weight: 400;
+            color: var(--gray-800);
+          }
+          .disable{
+            opacity: 0.4;
+          }
+        }
+    }
+    
     }
   }
   &-header{
