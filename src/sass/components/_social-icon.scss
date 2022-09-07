@@ -29,6 +29,13 @@
           color: var(--gray-800);
           background-color: var(--warning-500);
         }
+        path{
+          fill: var(--gray-10);
+          transition: all .4s;
+        }
+        &:hover path{
+          fill: var(--gray-800);
+        }
       }
     }
   }

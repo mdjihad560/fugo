@@ -63,42 +63,34 @@ textarea::placeholder{ /* Most modern browsers support this now. */
 
 
 // all newsletter
-.nexto-newsletter {
-  max-width: 430px;
+.fugo-newsletter {
+  max-width: 555px;
   position: relative;
   margin: 0 auto;
   input{
-    color: #13111A;
-    padding: 10px 150px 10px 25px!important;
-    background-color: var(--gray-10);
-  }
-  &.nexto-search{
-    input{
-      padding: 10px 150px 10px 50px!important;
+    padding: 15px 185px 15px 30px!important;
+    @include max(575px) {
+      padding: 15px 30px!important;
     }
   }
+
 }
-button#nexto-search-btn {
-  position: absolute;
-  top: 16px;
-  z-index: 9;
-  left: 20px;
-  opacity: .5;
-}
-#nexto-submit-btn{
+
+#fugo-submit-btn{
   font-weight: 700;
-  width: 130px;
-  height: 45px;
-  color: white;
+  width: 175px;
+  height: 50px;
   right: 5px;
   top: 5px;
+  font-size: 16px;
   transition: all 0.4s;
   border-radius: 10px;
   position: absolute;
-  background-size: 200% auto!important;
-  background: linear-gradient(to right, #FF00D4 0%, #7D41EA 30.35%, #0080FF 100%);
+  color: var(--gray-800);
+  background-color: var(--warning-500);
   &:hover{
-    background-position: right center;
+    color: var(--gray-10);
+    background-color: var(--gray-800);
   }
   @include max(575px) {
     position: inherit;
@@ -107,66 +99,4 @@ button#nexto-search-btn {
     right: 0;
     top: 0;
 }
-}
-
-.nexto-newsletter {
-  &.nexto-newsletter2{
-    max-width: 466px;
-    margin: 45px 0 0;
-    input{
-      padding: 10px 160px 10px 25px!important;
-    }
-    @include max(991px) {
-      max-width: 100%;
-    }
-    input{
-      border-radius: 3px;
-    }
-    #nexto-submit-btn{
-      border-radius: 3px;
-      right: 0;
-      top: 0;
-      height: 55px;
-      width: 150px;
-      border-radius: 0px 3px 3px 0px;
-      background: var(--gray-800);
-
-    }
-  }
-}
-.nexto-newsletter input::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
-    color:    #13111A;
-    opacity: 0.5;
-}
-.nexto-newsletter input:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
-   color:    #13111A;
-   opacity:  0.5;
-}
-.nexto-newsletter input::-moz-placeholder{ /* Mozilla Firefox 19+ */
-   color:    #13111A;
-   opacity:  0.5;
-}
-.nexto-newsletter input:-ms-input-placeholder{ /* Internet Explorer 10-11 */
-   color:    #13111A;
-   opacity: 0.5;
-}
-.nexto-newsletter input::-ms-input-placeholder{ /* Microsoft Edge */
-   color:    #13111A;
-   opacity: 0.5;
-}
-
-.nexto-newsletter input::placeholder{ /* Most modern browsers support this now. */
-   color:    #13111A;
-   opacity: 0.5;
-}
-
-#nexto-form-submit-btn{
-  width: 180px;
-  height: 55px;
-  font-weight: 700;
-  font-size: 16px;
-  color: #fff;
-  transition: all 0.4s;
-  background: linear-gradient(225deg,#0080ff 0,#7d41ea 46.35%,#ff00d4 100%);
-  border-radius: 10px;
 }
