@@ -1,0 +1,106 @@
+.fugo-gallery-menu{
+    text-align: center;
+    max-width: 832px;
+    margin: 0 auto 80px;
+    border-bottom: 2px solid rgba(19,17,26,.1);
+  ul{
+    li{
+      font-size: 16px;
+      font-weight: 700;
+      display: inline-block;
+      margin-right: 50px;
+      position: relative;
+      cursor: pointer;
+      padding-bottom: 10px;
+      transition: all 0.4s;
+      color: rgba(19, 17, 26, 0.8);
+      &.active{
+        color: var(--warning-500);
+      }
+      &.active:before{
+        content: "";
+        left: 0;
+        opacity: 1;
+        bottom: -2px;
+        width: 100%;
+        height: 2px;
+        transition: all 0.4s;
+        position: absolute;
+        background-color: var(--warning-500);
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.fugo-gallery{
+  &-wrap{
+    margin-left: -24px;
+  }
+  &-item{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    &:before{
+      content: "";
+      left: 0;
+      top: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      mix-blend-mode: multiply;
+      border-radius: 10px;
+      transition: all 0.4s;
+      background: linear-gradient(180deg, rgba(19, 17, 26, 0) 0%, #13111A 100%);
+    }
+    &:hover:before{
+      opacity: 1;
+    }
+    &:hover .fugo-gallery-data{
+      opacity: 1;
+      visibility: visible;
+      left: 30px;
+    }
+  }
+  &-data{
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+    h4{
+      margin: 0 0 8px;
+      a{
+        color: #fff;
+      }
+      
+    }
+    p{
+      color: #fff;
+      opacity: 0.8;
+    }
+  }
+}
+
+.fugo-grid-item.fugo-grid-item-w2 {
+  max-width: 100%;
+}
+.fugo-portfolio-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+  @include max(991px) {
+    margin-top: 26px;
+  }
+}
