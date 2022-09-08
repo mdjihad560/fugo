@@ -3,6 +3,13 @@
     max-width: 832px;
     margin: 0 auto 80px;
     border-bottom: 2px solid rgba(19,17,26,.1);
+    @include max(991px) {
+      margin-bottom: 60px;
+    }
+    @include max(767px) {
+      margin-bottom: 30px;
+      border: none;
+    }
   ul{
     li{
       font-size: 16px;
@@ -14,6 +21,12 @@
       padding-bottom: 10px;
       transition: all 0.4s;
       color: rgba(19, 17, 26, 0.8);
+      @include max(991px) {
+        margin-right: 15px;
+      }
+      @include max(767px) {
+        margin-bottom: 10px;
+      }
       &.active{
         color: var(--warning-500);
       }
@@ -40,14 +53,23 @@
     margin-left: -24px;
   }
   &-item{
-    border-radius: 10px;
     overflow: hidden;
     position: relative;
     margin-left: 24px;
     margin-bottom: 24px;
+    &.item2{
+      margin-bottom: 55px;
+      @include max(991px) {
+        margin-bottom: 30px;
+      }
+      &:before {
+        content: none;
+      }
+    }
     img{
       width: 100%;
       height: 100%;
+      border-radius: 10px;
     }
     &:before{
       content: "";
@@ -79,16 +101,39 @@
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s;
-    h4{
+    h4, h5{
       margin: 0 0 8px;
       a{
         color: #fff;
       }
-      
+    }
+    h5{
+      margin: 0 0 5px;
     }
     p{
       color: #fff;
       opacity: 0.8;
+    }
+  }
+  &-data2{
+    margin-top: 30px;
+    position: relative;
+    h4{
+      margin: 0 0 5px;
+      a{
+        color: var(--gray-800);
+      }
+    }
+    p{
+      margin: 0;
+    }
+    a.fugo-icon-btn{
+      position: absolute;
+      right: 0;
+      top: 20px;
+      img{
+        width: auto;
+      }
     }
   }
 }
@@ -102,5 +147,89 @@
   margin-top: 56px;
   @include max(991px) {
     margin-top: 26px;
+  }
+}
+
+.fugo-gallery{
+  &-wrap3{
+    max-width: 1075px;
+    margin: 0 auto;
+  }
+  &-thumb{
+    margin-bottom: 25px;
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+    }
+  }
+  &-data3{
+    h4{
+      margin-bottom: 10px;
+    }
+    p{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.border_bottom{
+  padding-bottom: 50px;
+  margin-bottom: 55px;
+  border-bottom: 1px solid rgba(19, 17, 26, 0.1);
+  @include max(991px) {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+// single portfolio
+.fugo-gallery-data4{
+  margin-bottom: 55px;
+  @include max(991px) {
+    margin-bottom: 35px;
+  }
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li{
+      color: var(--gray-800);
+      span{
+        display: block;
+        font-weight: 600;
+      }
+      @include max(600px) {
+        flex: 0 0 50%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .fugo-team-information{
+    ul{
+      display: block;
+    }
+  }
+}
+
+.fugo-portfolio-ratated-project{
+  padding-top: 55px;
+  @include max(991px) {
+    padding-top: 35px;
+  }
+  border-top: 1px solid rgba(19, 17, 26, 0.1);
+  p{
+    margin-right: 220px;
+    @include max(991px) {
+      margin-right: 0;
+    }
+  }
+  .fugo-gallery-item{
+    margin-left: 0;
+  }
+  .fugo-gallery-data{
+    p{
+      font-size: 14px;
+    }
   }
 }

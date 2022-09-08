@@ -1,0 +1,104 @@
+{% extends "layout/layout.html" %}
+{% set page_title = "Portfolio Minimal" %}
+ {% block content %}
+
+{% include "../templates/layout/header-footer/header-one.html" %} 
+
+<div class="fugo-breadcrumb-section">
+  <div class="container">
+    {% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
+  </div>
+  <div class="fugo-shape8">
+    <img src="assets/images/shape/shape7.png" alt="">
+  </div>
+  <div class="fugo-shape9">
+    <img src="assets/images/shape/shape8.png" alt="">
+  </div>
+</div>
+<!-- End breadcrumb -->
+
+<div class="section fugo-section-padding">
+  <div class="container">
+    <div class="fugo-gallery-menu">
+      <ul id="watch-filter-gallery" class="option-set clear-both" data-option-key="filter">
+        <li class="active" data-option-value="*">All Projects (35)</li>
+        <li class="" data-option-value=".branding">Branding (10)</li>
+        <li class="" data-option-value=".commercial">Commercial (08)</li>
+        <li class="" data-option-value=".digital">Digital Art (12)</li>
+        <li class="" data-option-value=".design">UI/UX Design (05)</li>
+      </ul>
+    </div>
+    <div class="fugo-gallery-wrap" id="fugo-gallery-masonay2">
+      <div class="fugo-grid-item branding commercial">
+        <div class="fugo-gallery-item item2">
+          <img src="assets/images/all-img/portfolio/p1.png" alt="">
+          <div class="fugo-gallery-data2">
+            <h4><a href="single-portfolio.html">Artwork wall printing</a></h4>
+            <p>Digital Art</p>
+            <a class="fugo-icon-btn" href="single-portfolio.html">Discover More <img src="assets/images/svg/arrow-black-right.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="fugo-grid-item commercial">
+        <div class="fugo-gallery-item item2">
+          <img src="assets/images/all-img/portfolio/p2/p2.png" alt="">
+          <div class="fugo-gallery-data2">
+            <h4><a href="single-portfolio.html">Skeleton face</a></h4>
+            <p>Branding</p>
+            <a class="fugo-icon-btn" href="single-portfolio.html">Discover More <img src="assets/images/svg/arrow-black-right.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="fugo-grid-item design">
+        <div class="fugo-gallery-item item2">
+          <img src="assets/images/all-img/portfolio//p2/p3.png" alt="">
+          <div class="fugo-gallery-data2">
+            <h4><a href="single-portfolio.html">Chinese ladyface</a></h4>
+            <p>Commercial</p>
+            <a class="fugo-icon-btn" href="single-portfolio.html">Discover More <img src="assets/images/svg/arrow-black-right.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="fugo-grid-item digital design">
+        <div class="fugo-gallery-item item2">
+          <img src="assets/images/all-img/portfolio//p2/p4.png" alt="">
+          <div class="fugo-gallery-data2">
+            <h4><a href="single-portfolio.html">Primitive culture</a></h4>
+            <p>Digital Art</p>
+            <a class="fugo-icon-btn" href="single-portfolio.html">Discover More <img src="assets/images/svg/arrow-black-right.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="fugo-grid-item branding commercial">
+        <div class="fugo-gallery-item item2">
+          <img src="assets/images/all-img/portfolio//p2/p5.png" alt="">
+            <div class="fugo-gallery-data2">
+              <h4><a href="single-portfolio.html">Strategic planning</a></h4>
+              <p>Branding</p>
+              <a class="fugo-icon-btn" href="single-portfolio.html">Discover More <img src="assets/images/svg/arrow-black-right.svg" alt=""></a>
+            </div>
+        </div>
+      </div>
+      <div class="fugo-grid-item commercial">
+        <div class="fugo-gallery-item item2">
+          <img src="assets/images/all-img/portfolio//p2/p6.png" alt="">
+          <div class="fugo-gallery-data2">
+            <h4><a href="single-portfolio.html">Wild animal artwork</a></h4>
+            <p>Digital Art</p>
+            <a class="fugo-icon-btn" href="single-portfolio.html">Discover More <img src="assets/images/svg/arrow-black-right.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fugo-portfolio-btn">
+      <a class="fugo-btn small-btn" href="">View All</a>
+    </div>
+  </div>
+</div>
+<!-- End portfolio -->
+
+
+  {% include "../templates/layout/header-footer/footer-one.html" %} 
+  
+{% endblock %}
