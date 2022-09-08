@@ -181,8 +181,12 @@ content: attr(data-monthly);
         font-size: 16px;
         font-weight: 600;
         margin-bottom: 11px;
+        position: relative;
+        padding-left: 30px;
         img{
-          margin-right: 14px;
+          left: 0;
+          top: 7px;
+          position: absolute;
         }
         &:last-child{
           margin-bottom: 0;

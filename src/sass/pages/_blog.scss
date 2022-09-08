@@ -64,6 +64,9 @@
       margin-bottom: 7px;
       a{
         color: var(--gray-800);
+        &:hover{
+          color: var(--warning-500);
+        }
       }
     }
     p{
