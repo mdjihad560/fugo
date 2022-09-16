@@ -70,3 +70,10 @@
     margin-top: 40px;
   }
 }
+
+.fugo-default-content.contact-page{
+  margin-right: 50px;
+  @include max(1399px) {
+    margin-right: 0;
+  }
+}

@@ -12,7 +12,8 @@ header.fugo-header-section {
 }
 header.fugo-header-section.sticky-menu{
   padding: 10px 0;
-  background-color: #F0E9E1;
+  background-color: #fff;
+  box-shadow: 0 4px 80px rgb(0 0 0 / 6%);
 }
 .site-menu-main .nav-link-item{
   color: var(--gray-800);

@@ -56,7 +56,9 @@
       border: 2px solid var(--success-500);
       background-color: var(--success-500);
       &:hover{
-        color: var(--gray-800);
+        color: var(--gray-10);
+        background-color: var(--gray-800);
+        border: 2px solid var(--gray-800);
       }
     }
   }

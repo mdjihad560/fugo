@@ -62,6 +62,9 @@
 .fugo-testimonial-slider .fugo-testimonial-card{
   margin: 0 12px;
   padding: 29px;
+  @include max(767px) {
+    margin: 0;
+  }
 }
 
 // testimonial 2
@@ -92,6 +95,9 @@
     @include max(1399px) {
       margin: 0 20px;
     }
+    @include max(991px) {
+      margin: 0;
+    }
   }
   
 }
@@ -101,7 +107,12 @@
   @include max(1199px) {
     margin-top: 50px;
   }
+  .fugo-btn.fugo-header-btn{
+    margin-left: 0;
+  }
 }
+
+
 
 // testimonial page
 .fugo-testimonial{

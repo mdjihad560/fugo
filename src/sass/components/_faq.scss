@@ -4,6 +4,9 @@
     margin-bottom: 40px;
     padding-bottom: 40px;
     border-bottom: 1px solid var(--gray-800);
+    h4{
+      font-weight: bold;
+    }
     &:last-child{
       margin: 0;
       padding: 0;
@@ -44,8 +47,10 @@ a.fugo-faq-btn {
   font-size: 16px;
   position: absolute;
   bottom: 0;
+  font-weight: 700;
   color: var(--gray-800);
   transition: all 0.4s;
+  text-decoration: underline;
   &:hover{
     color: var(--warning-500);
   }

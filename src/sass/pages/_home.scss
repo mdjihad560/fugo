@@ -118,6 +118,7 @@
         height: 200px;
         border-radius: 100%;
         display: flex;
+        padding-top: 20px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -136,7 +137,7 @@
             }
         }
         .number{
-            margin-bottom: 5px;
+            margin-bottom: 20px;
             font-weight: 700;
             font-size: 48px;
             color: var(--gray-800);
@@ -152,3 +153,28 @@
         }
     }
 }
+.fugo-go-top {
+    position:fixed;
+    bottom: 20%;
+    right: 3%;
+    z-index: 0;
+    z-index: 99;
+    display:none;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    &:before{
+        content: "";
+        left: 50%;
+        top: 50%;
+        z-index: -1;
+        width: 40px;
+        height: 40px;
+        border-radius: 3px;
+        position: absolute;
+        background-color: var(--warning-500);
+        transform: translate(-50%, -50%)
+    }
+    img{
+        transform: rotate(-90deg);
+    }
+  }

@@ -144,9 +144,9 @@
 .fugo-portfolio-btn {
   display: flex;
   justify-content: center;
-  margin-top: 56px;
+  margin-top: 40px;
   @include max(991px) {
-    margin-top: 26px;
+    margin-top: 20px;
   }
 }
 

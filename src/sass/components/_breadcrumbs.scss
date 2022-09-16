@@ -8,9 +8,19 @@
   @include max(767px) {
     padding: 130px 0 60px;
   }
+  @include max(479px) {
+    padding: 100px 0 60px;
+  }
 }
 .breadcrumbs {
   text-align: center;
+  h1{
+    @include max(575px) {
+      margin-bottom: 10px;
+      line-height: 20px;
+    }
+  }
+  
 }
 
 
