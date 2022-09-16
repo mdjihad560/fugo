@@ -155,7 +155,7 @@
 }
 .fugo-go-top {
     position:fixed;
-    bottom: 20%;
+    bottom: 10%;
     right: 3%;
     z-index: 0;
     z-index: 99;
@@ -178,3 +178,10 @@
         transform: rotate(-90deg);
     }
   }
+
+  .fugo-btn-wrap {
+    margin-top: 55px;
+    @include max(991px) {
+        margin-top: 40px;
+    }
+}
