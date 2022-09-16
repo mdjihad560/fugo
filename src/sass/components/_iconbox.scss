@@ -1,4 +1,4 @@
-.fugo-iconbox{
+.fugu-iconbox{
   &-wrap{
     border-radius: 3px;
     padding: 39px;
@@ -15,7 +15,7 @@
     &:hover{
       background-color: var(--warning-300);
     }
-    &.fugo-iconbox-wrap5{
+    &.fugu-iconbox-wrap5{
       border: 1px solid rgba(19, 17, 26, 0.1);
       &:hover{
         background: #FFFFFF;
@@ -35,7 +35,7 @@
     }
   }
 }
-.fugo-icon-btn{
+.fugu-icon-btn{
   font-size: 16px;
   font-weight: 700;
   color: var(--gray-800);
@@ -50,7 +50,7 @@
 }
 
 // icon box 2
-.fugo-iconbox{
+.fugu-iconbox{
   &-wrap2{
     padding: 30px;
     border-radius: 10px;
@@ -63,7 +63,7 @@
 }
 
 // feature section 2
-.fugo-iconbox{
+.fugu-iconbox{
   &-wrap3{
     padding: 40px;
     text-align: center;
@@ -92,7 +92,7 @@
 }
 
 // icon box about page
-.fugo-iconbox{
+.fugu-iconbox{
   &-wrap4{
     padding: 29px;
     text-align: center;
@@ -106,7 +106,7 @@
   }
 }
 
-.fugo-iconbox{
+.fugu-iconbox{
   &-wrap6{
     text-align: center;
     padding: 0 22px;
@@ -124,7 +124,7 @@
   
 }
 
-.fugo-iconbox-border{
+.fugu-iconbox-border{
   position: relative;
   &:before{
     content: "";

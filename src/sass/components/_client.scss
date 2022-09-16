@@ -1,11 +1,11 @@
 // client section
-.fugo-client-section{
+.fugu-client-section{
   padding: 75px 0 80px;
   @include max(767px) {
     padding: 60px 0;
   }
 }
-.fugo-client-title{
+.fugu-client-title{
   margin-bottom: 50px;
   text-align: center;
   &.text-white{
@@ -24,7 +24,7 @@
   }
 }
 
-.fugo-brand-logo{
+.fugu-brand-logo{
   margin: 10px 0;
   img{
     opacity: 0.7;

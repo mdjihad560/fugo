@@ -1,4 +1,4 @@
-.fugo-hero-section {
+.fugu-hero-section {
   z-index: 0;
   overflow: hidden;
   position: relative;
@@ -12,7 +12,7 @@
   }
 
 }
-.fugo-hero-content{
+.fugu-hero-content{
   margin-right: 50px;
   @include max(991px) {
     margin: 0 50px 50px;
@@ -37,7 +37,7 @@
     color: var(--gray-800);
   }
 }
-.fugo-app-btn-wrap {
+.fugu-app-btn-wrap {
   margin: 55px 0 95px;
   @include max(991px) {
     margin: 40px 0 60px;
@@ -47,7 +47,7 @@
   }
   
 }
-a.fugo-app-btn{
+a.fugu-app-btn{
   display: inline-block;
   margin-right: 20px;
   @include max(767px) {
@@ -62,7 +62,7 @@ a.fugo-app-btn{
 }
 
 
-.fugo-hero-client {
+.fugu-hero-client {
   &-area{
     display: flex;
     align-items: center;
@@ -139,7 +139,7 @@ a.fugo-app-btn{
   
 }
 
-.fugo-hero-thumb {
+.fugu-hero-thumb {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -157,19 +157,19 @@ a.fugo-app-btn{
     right: 0!important;
   }
 }
-.fugo-shape1 {
+.fugu-shape1 {
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: -1;
 }
-.fugo-shape2 {
+.fugu-shape2 {
   position: absolute;
   top: -20%;
   left: -25%;
   z-index: -1;
 }
-.fugo-hero-star {
+.fugu-hero-star {
   position: absolute;
   top: 0;
   right: 38%;
@@ -193,7 +193,7 @@ a.fugo-app-btn{
 
 
 // v2
-.fugo-hero-section2{
+.fugu-hero-section2{
   z-index: 0;
   overflow: hidden;
   padding: 188px 0 430px;
@@ -239,7 +239,7 @@ a.fugo-app-btn{
     }
   }
 }
-.fugo-hero-content2{
+.fugu-hero-content2{
   max-width: 920px;
   margin: 0 auto;
   text-align: center;
@@ -250,17 +250,17 @@ a.fugo-app-btn{
     }
   }
 }
-.fugo-hero-btn-wrap{
+.fugu-hero-btn-wrap{
   margin-top: 60px;
   @include max(991px) {
     margin-top: 40px;
   }
-  .fugo-btn{
+  .fugu-btn{
     margin: 7px;
   }
 }
 
-.fugo-single-thumb {
+.fugu-single-thumb {
   text-align: center;
   margin-top: -320px;
   z-index: 1;
@@ -270,11 +270,11 @@ a.fugo-app-btn{
   }
 }
 
-.fugo-single-thumb-section{
+.fugu-single-thumb-section{
   background-color: var(--warning-200);
 }
 
-.fugo-shape4 {
+.fugu-shape4 {
   position: absolute;
   top: 15%;
   left: 3%;
@@ -284,7 +284,7 @@ a.fugo-app-btn{
     display: none;
   }
 }
-.fugo-shape5 {
+.fugu-shape5 {
   position: absolute;
   right: 5%;
   bottom: 25%;

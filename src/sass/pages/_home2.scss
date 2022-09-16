@@ -1,13 +1,13 @@
 // text slider
 
-.fugo-text-slider-section {
+.fugu-text-slider-section {
   padding: 40px 0;
   background-color: var(--warning-200);
   @include max(1280px) {
     padding: 0;
   }
 }
-.fugo-text-slider-area1{
+.fugu-text-slider-area1{
   padding: 21px 0;
   background-color: var(--primary-500);
   transform: rotate(-2.5deg);
@@ -19,7 +19,7 @@
     transform: rotate(0deg);
   }
 }
-.fugo-text-slider-area2{
+.fugu-text-slider-area2{
   padding: 21px 0;
   background-color: var(--success-500);
   transform: rotate(3deg);
@@ -33,7 +33,7 @@
   transform: rotate(0deg);
 }
 }
-.fugo-text-slider {
+.fugu-text-slider {
   &-data{
       display: flex!important;
       align-items: center;
@@ -76,7 +76,7 @@
 
 // trading section
 
-.fugo-trading{
+.fugu-trading{
   &-card{
     &-thumb{
       position: relative;
@@ -110,7 +110,7 @@
   }
   &-card2{
     text-align: right;
-    .fugo-trading-card-thumb{
+    .fugu-trading-card-thumb{
       padding-left: 0;
       @include max(991px) {
        padding-left: 160px;
@@ -123,7 +123,7 @@
         margin-bottom: 50px;
        }
     }
-    .fugo-trading-card-thumb2 {
+    .fugu-trading-card-thumb2 {
       top: auto;
       left: 16%;
       transform: none;
@@ -136,12 +136,12 @@
         left: 0;
       }
   }
-  .fugo-shape7 {
+  .fugu-shape7 {
       top: -29%;
       z-index: -1;
       right: -27%;
   }
-  .fugo-shape6 {
+  .fugu-shape6 {
       top: 22%;
       left: -3%;
   }
@@ -149,7 +149,7 @@
   
 }
 
-.fugo-shape6 {
+.fugu-shape6 {
   position: absolute;
   top: -10%;
   left: -23%;
@@ -161,7 +161,7 @@
     display: none;
   }
 }
-.fugo-shape7 {
+.fugu-shape7 {
   position: absolute;
   top: -35%;
   z-index: -1;
@@ -172,7 +172,7 @@
 }
 
 // trading section
-.fugo-trading-section2{
+.fugu-trading-section2{
   padding: 120px 0 150px;
   overflow: hidden;
   background-color: var(--warning-100);

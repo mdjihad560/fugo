@@ -1,4 +1,4 @@
-.fugo-career{
+.fugu-career{
   &-card{
     padding: 29px;
     border-radius: 10px;
@@ -34,7 +34,7 @@
 }
 
 // career single
-.fugo-single-career-item {
+.fugu-single-career-item {
   margin-bottom: 55px;
   &:last-child{
     margin-bottom: 0;
@@ -44,7 +44,7 @@
   }
 }
 
-.fugo-career-sidebar {
+.fugu-career-sidebar {
   top: 100px;
   padding: 40px;
   border-radius: 10px;
@@ -61,7 +61,7 @@
   }
 }
 
-.fugo-career-time2{
+.fugu-career-time2{
   margin-bottom: 55px;
   @include max(991px) {
     margin-bottom: 30px;

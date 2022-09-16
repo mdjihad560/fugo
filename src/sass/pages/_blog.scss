@@ -1,4 +1,4 @@
-.fugo-blog{
+.fugu-blog{
   &-card{
     padding: 20px;
     border-radius: 10px;
@@ -80,7 +80,7 @@
 }
 
 // sidebar
-.fugo-blog-sidebar {
+.fugu-blog-sidebar {
   border: 1px solid var(--gray-700);
   border-radius: 10px;
   padding: 30px;
@@ -88,22 +88,22 @@
     margin-top: 40px;
   }
 }
-.fugo-product-search{
+.fugu-product-search{
   position: relative;
 }
-#fugo-search-btn {
+#fugu-search-btn {
   position: absolute;
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
 }
-.fugo-product-search{
+.fugu-product-search{
   input{
     padding: 10px 35px 10px 20px!important;
     border-radius: 4px;
   }
 }
-.fugo-sidebar{
+.fugu-sidebar{
   &-item{
     margin-bottom: 35px;
     &:last-child{
@@ -124,7 +124,7 @@
   }
 }
 
-.fugo-categories{
+.fugu-categories{
   ul{
     li{
       margin-bottom: 12px;
@@ -147,7 +147,7 @@
   }
 }
 
-.fugo-recent-post-item{
+.fugu-recent-post-item{
   margin-bottom: 30px;
   &:last-child{
     margin-bottom: 0;
@@ -161,7 +161,7 @@
       height: 100%;
     }
   }
-  .fugo-blog-meta{
+  .fugu-blog-meta{
     margin-bottom: 10px;
   }
   h6{
@@ -175,7 +175,7 @@
   }
 }
 
-.fugo-tags{
+.fugu-tags{
   ul{
     display: flex;
     flex-wrap: wrap;
@@ -205,7 +205,7 @@
 
 // blog single
 
-.fugo-blog-single{
+.fugu-blog-single{
   &-wrap{
     margin-right: 40px;
     @include max(1199px) {
@@ -220,7 +220,7 @@
       border-radius: 10px;
       margin-bottom: 20px;
     }
-    .fugo-blog-meta{
+    .fugu-blog-meta{
       margin-bottom: 35px;
     }
     ul{
@@ -233,7 +233,7 @@
   }
 }
 
-.fugo-user{
+.fugu-user{
   &-wrap{
     margin: 40px 0;
     padding: 29px;
@@ -297,7 +297,7 @@
   }
 }
 
-.fugo-blog-post {
+.fugu-blog-post {
   &-wrap{
     padding: 40px 0 35px;
     border-top: 1px solid rgba(19, 17, 26, 0.1);
@@ -321,10 +321,10 @@
       @include max(767px) {
         margin-top: 30px;
       }
-      .fugo-blog-post-arrow{
+      .fugu-blog-post-arrow{
         justify-content: flex-end;
       }
-      .fugo-blog-post-arrow-icon{
+      .fugu-blog-post-arrow-icon{
         margin-right: 0;
         margin-left: 15px;
       }
@@ -334,11 +334,11 @@
     display: flex;
     align-items: center;
     margin-bottom: 25px;
-    &:hover .fugo-blog-post-arrow-icon{
+    &:hover .fugu-blog-post-arrow-icon{
       background-color: var(--warning-500);
       border: 1px solid var(--warning-500);
     }
-    &:hover .fugo-blog-post-arrow-data p{
+    &:hover .fugu-blog-post-arrow-data p{
       color: var(--gray-800);
     }
     &-icon{
@@ -369,7 +369,7 @@
   
 }
 
-.fugo-comment{
+.fugu-comment{
   &-section{
     h5{
       margin-bottom: 40px;
@@ -441,7 +441,7 @@ a.comment-reply {
   }
 }
 
-.fugo-input-field {
+.fugu-input-field {
   &-section{
     background: #FFFFFF;
     box-shadow: 0px 4px 80px rgb(0 0 0 / 6%);
@@ -451,7 +451,7 @@ a.comment-reply {
     h5{
       margin-bottom: 30px;
     }
-    .fugo-input-field {
+    .fugu-input-field {
       textarea{
         height: 250px;
         @include max(991px) {
@@ -462,7 +462,7 @@ a.comment-reply {
         }
       }
     }
-    button#fugo-input-submit {
+    button#fugu-input-submit {
       margin-top: 16px;
       @include max(767px) {
         margin-top: 0;
@@ -475,7 +475,7 @@ a.comment-reply {
   
 }
 
-button#fugo-input-submit {
+button#fugu-input-submit {
   width: 196px;
   height: 55px;
   left: 182px;

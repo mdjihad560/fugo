@@ -1,6 +1,6 @@
 // bootstrap button style
 
-.fugo-btn {
+.fugu-btn {
   font-size: $button_font_size;
   line-height: $buton_line_height;
   border-radius: $buton_border_radius;
@@ -24,7 +24,7 @@
     color: var(--gray-10);
     background-color: var(--gray-800);
   }
-  &.fugo-header-btn{
+  &.fugu-header-btn{
     padding: 11px 33px;
     margin-left: 40px;
     background-color: transparent;
@@ -33,7 +33,7 @@
       color: var(--gray-10);
       background-color: var(--gray-800);
     }
-    &.fugo-header-btn2{
+    &.fugu-header-btn2{
       border-radius: 100px;
       border: 2px solid var(--success-500);
       background-color: var(--success-500);
@@ -43,7 +43,7 @@
       }
     }
   }
-  &.fugo-round-btn{
+  &.fugu-round-btn{
     width: 200px;
     padding: 18px;
     border-radius: 100px;

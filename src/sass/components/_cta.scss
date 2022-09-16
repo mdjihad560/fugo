@@ -1,10 +1,10 @@
-.fugo-cta-section{
+.fugu-cta-section{
   padding: 95px 0;
   background-color: var(--warning-400);
   @include max(767px) {
     padding: 80px 0;
   }
-  .fugo-default-content {
+  .fugu-default-content {
     &.large-content{
       @include max(991px) {
         text-align: center;
@@ -15,7 +15,7 @@
     }
   }
 }
-.fugo-cta-app-btn-wrap {
+.fugu-cta-app-btn-wrap {
   width: 100%;
   text-align: right;
   @include max(991px) {

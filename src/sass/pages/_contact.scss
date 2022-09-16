@@ -1,4 +1,4 @@
-.fugo-contact-info{
+.fugu-contact-info{
   margin-top: 55px;
   @include max(991px) {
     margin-top: 30px;
@@ -17,7 +17,7 @@
           margin-bottom: 5px;
         }
         color: rgba(2, 2, 30, 0.8);
-        .fugo-contact-info-icon{
+        .fugu-contact-info-icon{
           width: 50px;
           height: 50px;
           display: flex;
@@ -34,7 +34,7 @@
   }
 }
 
-.fugo-contact-wrap {
+.fugu-contact-wrap {
   background: #FFFFFF;
   box-shadow: 0px 4px 80px rgb(0 0 0 / 6%);
   border-radius: 5px;
@@ -44,7 +44,7 @@
     margin-top: 30px;
   }
 }
-.fugo-input-field{
+.fugu-input-field{
   label{
     display: block;
     margin-bottom: 10px;
@@ -63,7 +63,7 @@
   }
 }
 
-.fugo-center-btn{
+.fugu-center-btn{
   text-align: center;
   margin-top: 80px;
   @include max(991px) {
@@ -71,7 +71,7 @@
   }
 }
 
-.fugo-default-content.contact-page{
+.fugu-default-content.contact-page{
   margin-right: 50px;
   @include max(1399px) {
     margin-right: 0;

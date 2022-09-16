@@ -1,4 +1,4 @@
-.fugo-gallery-menu{
+.fugu-gallery-menu{
     text-align: center;
     max-width: 832px;
     margin: 0 auto 80px;
@@ -48,7 +48,7 @@
   }
 }
 
-.fugo-gallery{
+.fugu-gallery{
   &-wrap{
     margin-left: -24px;
   }
@@ -87,7 +87,7 @@
     &:hover:before{
       opacity: 1;
     }
-    &:hover .fugo-gallery-data{
+    &:hover .fugu-gallery-data{
       opacity: 1;
       visibility: visible;
       left: 30px;
@@ -127,7 +127,7 @@
     p{
       margin: 0;
     }
-    a.fugo-icon-btn{
+    a.fugu-icon-btn{
       position: absolute;
       right: 0;
       top: 20px;
@@ -138,10 +138,10 @@
   }
 }
 
-.fugo-grid-item.fugo-grid-item-w2 {
+.fugu-grid-item.fugu-grid-item-w2 {
   max-width: 100%;
 }
-.fugo-portfolio-btn {
+.fugu-portfolio-btn {
   display: flex;
   justify-content: center;
   margin-top: 40px;
@@ -150,7 +150,7 @@
   }
 }
 
-.fugo-gallery{
+.fugu-gallery{
   &-wrap3{
     max-width: 1075px;
     margin: 0 auto;
@@ -184,7 +184,7 @@
 }
 
 // single portfolio
-.fugo-gallery-data4{
+.fugu-gallery-data4{
   margin-bottom: 55px;
   @include max(991px) {
     margin-bottom: 35px;
@@ -205,14 +205,14 @@
       }
     }
   }
-  .fugo-team-information{
+  .fugu-team-information{
     ul{
       display: block;
     }
   }
 }
 
-.fugo-portfolio-ratated-project{
+.fugu-portfolio-ratated-project{
   padding-top: 55px;
   @include max(991px) {
     padding-top: 35px;
@@ -224,10 +224,10 @@
       margin-right: 0;
     }
   }
-  .fugo-gallery-item{
+  .fugu-gallery-item{
     margin-left: 0;
   }
-  .fugo-gallery-data{
+  .fugu-gallery-data{
     p{
       font-size: 14px;
     }

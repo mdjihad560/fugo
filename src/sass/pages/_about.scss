@@ -1,4 +1,4 @@
-.fugo-about{
+.fugu-about{
   &-section{
     padding: 120px 0 140px;
     @include max(991px) {
@@ -7,7 +7,7 @@
     @include max(767px) {
       padding: 80px 0;
     }
-    .fugo-default-content{
+    .fugu-default-content{
       h2{
         @include max(1199px) {
           font-size: 40px;
@@ -60,7 +60,7 @@
   }
 }
 
-.fugo-counter-rating{
+.fugu-counter-rating{
   margin-top: 30px;
     ul{
       display: flex;

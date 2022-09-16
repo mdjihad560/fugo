@@ -4,22 +4,22 @@
   /*------------------------------------------------------------------
   [Table of contents]
 
-FUGO STICKY MENU JS INIT
-FUGO COUNTER JS INIT
-FUGO TEXT SLIDER
-FUGO TEXT SLIDER 2
-FUGO CLIENT SLIDER
-FUGO CLIENT SLIDER 2
-FUGO TESTIMONIAL SLIDER
-FUGO TESTIMONIAL SLIDER 2
-FUGO PRICING TABLE JS INIT
-FUGO SCROLL EFFECT TWO JS INIT 01
-FUGO SCROLL EFFECT TWO JS INIT 02
-FUGO MAGNIFIC POPUP JS INIT
-FUGO GALLERY MASONAY FILTER JS 01
-FUGO GALLERY MASONAY FILTER JS 02
-FUGO GALLERY MASONAY FILTER JS 03
-FUGO MAP JS
+fugu STICKY MENU JS INIT
+fugu COUNTER JS INIT
+fugu TEXT SLIDER
+fugu TEXT SLIDER 2
+fugu CLIENT SLIDER
+fugu CLIENT SLIDER 2
+fugu TESTIMONIAL SLIDER
+fugu TESTIMONIAL SLIDER 2
+fugu PRICING TABLE JS INIT
+fugu SCROLL EFFECT TWO JS INIT 01
+fugu SCROLL EFFECT TWO JS INIT 02
+fugu MAGNIFIC POPUP JS INIT
+fugu GALLERY MASONAY FILTER JS 01
+fugu GALLERY MASONAY FILTER JS 02
+fugu GALLERY MASONAY FILTER JS 03
+fugu MAP JS
   
   -------------------------------------------------------------------*/
   
@@ -38,29 +38,29 @@ FUGO MAP JS
 
 
 /*--------------------------------------------------------------
-FUGO PRELOADER JS INIT
+fugu PRELOADER JS INIT
 --------------------------------------------------------------*/
 
-  $(".fugo-preloader").fadeOut(500);
+  $(".fugu-preloader").fadeOut(500);
 
 /*--------------------------------------------------------------
-FUGO SCROLL TOP JS INIT
+fugu SCROLL TOP JS INIT
 --------------------------------------------------------------*/
       //Scroll event
   $(window).scroll(function(){
     var scrolled = $(window).scrollTop();
-    if (scrolled > 200) $('.fugo-go-top').fadeIn('slow');
-    if (scrolled < 200) $('.fugo-go-top').fadeOut('slow');
+    if (scrolled > 200) $('.fugu-go-top').fadeIn('slow');
+    if (scrolled < 200) $('.fugu-go-top').fadeOut('slow');
   });
   
   //Click event
-  $('.fugo-go-top').click(function () {
+  $('.fugu-go-top').click(function () {
     $("html, body").animate({ scrollTop: "0" },  500);
   });
 
     
 /*--------------------------------------------------------------
-FUGO STICKY MENU JS INIT
+fugu STICKY MENU JS INIT
 --------------------------------------------------------------*/
 $(window).on('scroll', function(){
   if ($(window).scrollTop() > 50) {
@@ -72,16 +72,16 @@ $(window).on('scroll', function(){
 });
 
 /*--------------------------------------------------------------
-FUGO COUNTER JS INIT
+fugu COUNTER JS INIT
 --------------------------------------------------------------*/
-var fugo_counter = $('#fugo-counter');
-  if(fugo_counter.is_exist()){
+var fugu_counter = $('#fugu-counter');
+  if(fugu_counter.is_exist()){
       var a = 0;
       $(window).scroll(function() {
 
-        var oTop = $(fugo_counter).offset().top - window.innerHeight;
+        var oTop = $(fugu_counter).offset().top - window.innerHeight;
         if (a == 0 && $(window).scrollTop() > oTop) {
-          $('.fugo-counter').each(function() {
+          $('.fugu-counter').each(function() {
             var $this = $(this),
               countTo = $this.attr('data-percentage');
             $({
@@ -108,11 +108,11 @@ var fugo_counter = $('#fugo-counter');
 
 
 /*--------------------------------------------------------------
-FUGO TEXT SLIDER
+fugu TEXT SLIDER
 --------------------------------------------------------------*/
-  var fugo_text_slider = $('.fugo-text-slider1');
-  if(fugo_text_slider.is_exist()){
-    fugo_text_slider.slick({
+  var fugu_text_slider = $('.fugu-text-slider1');
+  if(fugu_text_slider.is_exist()){
+    fugu_text_slider.slick({
     infinite: true,
     slidesToShow: 2, 
     slidesToScroll: 1,
@@ -139,11 +139,11 @@ FUGO TEXT SLIDER
 }
 
 /*--------------------------------------------------------------
-FUGO TEXT SLIDER 2
+fugu TEXT SLIDER 2
 --------------------------------------------------------------*/
-var fugo_text_slider2 = $('.fugo-text-slider2');
-if(fugo_text_slider2.is_exist()){
-  fugo_text_slider2.slick({
+var fugu_text_slider2 = $('.fugu-text-slider2');
+if(fugu_text_slider2.is_exist()){
+  fugu_text_slider2.slick({
   rtl: true,
   infinite: true,
   slidesToShow: 2, 
@@ -171,11 +171,11 @@ if(fugo_text_slider2.is_exist()){
 }
 
 /*--------------------------------------------------------------
-FUGO CLIENT SLIDER
+fugu CLIENT SLIDER
 --------------------------------------------------------------*/
-var fugo_client_slider = $('.fugo-client-slider');
-if(fugo_client_slider.is_exist()){
-  fugo_client_slider.slick({
+var fugu_client_slider = $('.fugu-client-slider');
+if(fugu_client_slider.is_exist()){
+  fugu_client_slider.slick({
   infinite: true,
   slidesToShow: 5, 
   slidesToScroll: 1,
@@ -214,11 +214,11 @@ if(fugo_client_slider.is_exist()){
 
 
 /*--------------------------------------------------------------
-FUGO CLIENT SLIDER 2
+fugu CLIENT SLIDER 2
 --------------------------------------------------------------*/
-var fugo_client_slider2 = $('.fugo-client-slider2');
-if(fugo_client_slider2.is_exist()){
-  fugo_client_slider2.slick({
+var fugu_client_slider2 = $('.fugu-client-slider2');
+if(fugu_client_slider2.is_exist()){
+  fugu_client_slider2.slick({
   rows: 2,
   infinite: true,
   slidesToShow: 5, 
@@ -258,11 +258,11 @@ if(fugo_client_slider2.is_exist()){
 
 
 /*--------------------------------------------------------------
-FUGO TESTIMONIAL SLIDER
+fugu TESTIMONIAL SLIDER
 --------------------------------------------------------------*/
-var fugo_testimonial_slider = $('.fugo-testimonial-slider');
-if(fugo_testimonial_slider.is_exist()){
-  fugo_testimonial_slider.slick({
+var fugu_testimonial_slider = $('.fugu-testimonial-slider');
+if(fugu_testimonial_slider.is_exist()){
+  fugu_testimonial_slider.slick({
     infinite: true,
     slidesToShow: 3, 
     slidesToScroll: 1,
@@ -290,11 +290,11 @@ if(fugo_testimonial_slider.is_exist()){
 }
 
 /*--------------------------------------------------------------
-FUGO TESTIMONIAL SLIDER 2
+fugu TESTIMONIAL SLIDER 2
 --------------------------------------------------------------*/
-var fugo_testimonial_slider2 = $('.fugo-testimonial-slider2');
-if(fugo_testimonial_slider2.is_exist()){
-  fugo_testimonial_slider2.slick({
+var fugu_testimonial_slider2 = $('.fugu-testimonial-slider2');
+if(fugu_testimonial_slider2.is_exist()){
+  fugu_testimonial_slider2.slick({
     infinite: true,
     slidesToShow: 2, 
     slidesToScroll: 1,
@@ -316,7 +316,7 @@ if(fugo_testimonial_slider2.is_exist()){
 }
 
 /*--------------------------------------------------------------
-FUGO PRICING TABLE JS INIT
+fugu PRICING TABLE JS INIT
 ------------------------------------------------------------*/
     // Table BTN Trigger
     $("#l5-pricing-btn .toggle-btn").on("click", function (e) {
@@ -350,7 +350,7 @@ FUGO PRICING TABLE JS INIT
 
 
 /*--------------------------------------------------------------
-FUGO SCROLL EFFECT TWO JS INIT 01
+fugu SCROLL EFFECT TWO JS INIT 01
 ------------------------------------------------------------*/
 var $rotateTwo = $('#rotatetwo');
 var $win = $(window);
@@ -360,7 +360,7 @@ $win.on('scroll', function () {
 });
 
 /*--------------------------------------------------------------
-FUGO SCROLL EFFECT TWO JS INIT 02
+fugu SCROLL EFFECT TWO JS INIT 02
 ------------------------------------------------------------*/
 var $rotateThree = $('#rotatethree');
 var $win = $(window);
@@ -370,9 +370,9 @@ $win.on('scroll', function () {
 });
 
 /*--------------------------------------------------------------
-FUGO MAGNIFIC POPUP JS INIT
+fugu MAGNIFIC POPUP JS INIT
 ------------------------------------------------------------*/
-var popup_youtube = $('.fugo-popup');
+var popup_youtube = $('.fugu-popup');
   if (popup_youtube.is_exist()){
       popup_youtube.magnificPopup({
       type: 'iframe',
@@ -396,11 +396,11 @@ var popup_youtube = $('.fugo-popup');
   
   $(window).on("load" ,function(){
  /*--------------------------------------------------------------
-FUGO GALLERY MASONAY FILTER JS 01
+fugu GALLERY MASONAY FILTER JS 01
 ------------------------------------------------------------*/
-var fugo_gallery_masonay1 = $('#fugo-gallery-masonay1');
-if(fugo_gallery_masonay1.is_exist()){
-  var $container = $(fugo_gallery_masonay1),
+var fugu_gallery_masonay1 = $('#fugu-gallery-masonay1');
+if(fugu_gallery_masonay1.is_exist()){
+  var $container = $(fugu_gallery_masonay1),
     colWidth = function () {
       var w = $container.width(), 
         columnNum = 1,
@@ -417,10 +417,10 @@ if(fugo_gallery_masonay1.is_exist()){
         columnNum  = 1;
       }
       columnWidth = Math.floor(w/columnNum);
-      $container.find('.fugo-grid-item').each(function() {
+      $container.find('.fugu-grid-item').each(function() {
         var $item = $(this),
-          multiplier_w = $item.attr('class').match(/fugo-grid-item-w(\d)/),
-          multiplier_h = $item.attr('class').match(/fugo-grid-item-h(\d)/),
+          multiplier_w = $item.attr('class').match(/fugu-grid-item-w(\d)/),
+          multiplier_h = $item.attr('class').match(/fugu-grid-item-h(\d)/),
           width = multiplier_w ? columnWidth*multiplier_w[1] : columnWidth,
           height = multiplier_h ? columnWidth*multiplier_h[1]*0.4-12 : columnWidth*0.5;
         $item.css({
@@ -433,7 +433,7 @@ if(fugo_gallery_masonay1.is_exist()){
     isotope = function () {
       $container.isotope({
         resizable: false,
-        itemSelector: '.fugo-grid-item',
+        itemSelector: '.fugu-grid-item',
         masonry: {
           columnWidth: colWidth(),
           gutterWidth: 0
@@ -442,7 +442,7 @@ if(fugo_gallery_masonay1.is_exist()){
     };
   isotope();
   $(window).resize(isotope);
-  var $optionSets = $('.fugo-gallery-menu .option-set'),
+  var $optionSets = $('.fugu-gallery-menu .option-set'),
       $optionLinks = $optionSets.find('li');
   $optionLinks.click(function(){
   var $this = $(this);
@@ -470,11 +470,11 @@ if(fugo_gallery_masonay1.is_exist()){
 
 
 /*--------------------------------------------------------------
-FUGO GALLERY MASONAY FILTER JS 02
+fugu GALLERY MASONAY FILTER JS 02
 ------------------------------------------------------------*/
-var fugo_gallery_masonay2 = $('#fugo-gallery-masonay2');
-if(fugo_gallery_masonay2.is_exist()){
-  var $container = $(fugo_gallery_masonay2),
+var fugu_gallery_masonay2 = $('#fugu-gallery-masonay2');
+if(fugu_gallery_masonay2.is_exist()){
+  var $container = $(fugu_gallery_masonay2),
     colWidth = function () {
       var w = $container.width(), 
         columnNum = 1,
@@ -491,10 +491,10 @@ if(fugo_gallery_masonay2.is_exist()){
         columnNum  = 1;
       }
       columnWidth = Math.floor(w/columnNum);
-      $container.find('.fugo-grid-item').each(function() {
+      $container.find('.fugu-grid-item').each(function() {
         var $item = $(this),
-          multiplier_w = $item.attr('class').match(/fugo-grid-item-w(\d)/),
-          multiplier_h = $item.attr('class').match(/fugo-grid-item-h(\d)/),
+          multiplier_w = $item.attr('class').match(/fugu-grid-item-w(\d)/),
+          multiplier_h = $item.attr('class').match(/fugu-grid-item-h(\d)/),
           width = multiplier_w ? columnWidth*multiplier_w[1] : columnWidth,
           height = multiplier_h ? columnWidth*multiplier_h[1]*0.4-12 : columnWidth*0.5;
         $item.css({
@@ -507,7 +507,7 @@ if(fugo_gallery_masonay2.is_exist()){
     isotope = function () {
       $container.isotope({
         resizable: false,
-        itemSelector: '.fugo-grid-item',
+        itemSelector: '.fugu-grid-item',
         masonry: {
           columnWidth: colWidth(),
           gutterWidth: 0
@@ -516,7 +516,7 @@ if(fugo_gallery_masonay2.is_exist()){
     };
   isotope();
   $(window).resize(isotope);
-  var $optionSets = $('.fugo-gallery-menu .option-set'),
+  var $optionSets = $('.fugu-gallery-menu .option-set'),
       $optionLinks = $optionSets.find('li');
   $optionLinks.click(function(){
   var $this = $(this);
@@ -544,11 +544,11 @@ if(fugo_gallery_masonay2.is_exist()){
 
 
 /*--------------------------------------------------------------
-FUGO GALLERY MASONAY FILTER JS 03
+fugu GALLERY MASONAY FILTER JS 03
 ------------------------------------------------------------*/
-var fugo_gallery_masonay3 = $('#fugo-gallery-masonay3');
-if(fugo_gallery_masonay3.is_exist()){
-  var $container = $(fugo_gallery_masonay3),
+var fugu_gallery_masonay3 = $('#fugu-gallery-masonay3');
+if(fugu_gallery_masonay3.is_exist()){
+  var $container = $(fugu_gallery_masonay3),
     colWidth = function () {
       var w = $container.width(), 
         columnNum = 1,
@@ -565,10 +565,10 @@ if(fugo_gallery_masonay3.is_exist()){
         columnNum  = 1;
       }
       columnWidth = Math.floor(w/columnNum);
-      $container.find('.fugo-grid-item').each(function() {
+      $container.find('.fugu-grid-item').each(function() {
         var $item = $(this),
-          multiplier_w = $item.attr('class').match(/fugo-grid-item-w(\d)/),
-          multiplier_h = $item.attr('class').match(/fugo-grid-item-h(\d)/),
+          multiplier_w = $item.attr('class').match(/fugu-grid-item-w(\d)/),
+          multiplier_h = $item.attr('class').match(/fugu-grid-item-h(\d)/),
           width = multiplier_w ? columnWidth*multiplier_w[1] : columnWidth,
           height = multiplier_h ? columnWidth*multiplier_h[1]*0.4-12 : columnWidth*0.5;
         $item.css({
@@ -581,7 +581,7 @@ if(fugo_gallery_masonay3.is_exist()){
     isotope = function () {
       $container.isotope({
         resizable: false,
-        itemSelector: '.fugo-grid-item',
+        itemSelector: '.fugu-grid-item',
         masonry: {
           columnWidth: colWidth(),
           gutterWidth: 0
@@ -590,7 +590,7 @@ if(fugo_gallery_masonay3.is_exist()){
     };
   isotope();
   $(window).resize(isotope);
-  var $optionSets = $('.fugo-gallery-menu .option-set'),
+  var $optionSets = $('.fugu-gallery-menu .option-set'),
       $optionLinks = $optionSets.find('li');
   $optionLinks.click(function(){
   var $this = $(this);
@@ -621,7 +621,7 @@ if(fugo_gallery_masonay3.is_exist()){
   }); // End window LODE
 
 /*--------------------------------------------------------------
-FUGO MAP JS
+fugu MAP JS
 ------------------------------------------------------------*/
 var google_map = $('#map');
 if(google_map.is_exist()){
@@ -646,11 +646,11 @@ if(google_map.is_exist()){
         position: new google.maps.LatLng(40.6700, -73.9400),
         map: map,
         icon: '../assets/images/all-img/contact/map.png',
-        title: 'fugo'
+        title: 'fugu'
       });
       var contentString = '<div id="content">' +
           '<div id="tpw">' +
-          '<h3>fugo' +
+          '<h3>fugu' +
           '</div>';
 
       var infowindow = new google.maps.InfoWindow({

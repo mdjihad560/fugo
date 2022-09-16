@@ -1,5 +1,5 @@
 
-.fugo-video-thumb{
+.fugu-video-thumb{
   position: relative;
   img{
     width: 100%;
@@ -9,15 +9,15 @@
     margin-bottom: 30px;
   }
 }
-a.fugo-popup, 
-.fugo-play-btn {
+a.fugu-popup, 
+.fugu-play-btn {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-a.fugo-popup img{
+a.fugu-popup img{
   -webkit-animation: rotate-animation 10s infinite linear;
   -moz-animation: rotate-animation 10s infinite linear;
   -o-animation: rotate-animation 10s infinite linear;
@@ -35,7 +35,7 @@ a.fugo-popup img{
     width: 75px;
   }
 }
-.fugo-play-btn img{
+.fugu-play-btn img{
   animation: none!important;
   width: auto!important;
 }
@@ -59,7 +59,7 @@ a.fugo-popup img{
 }
 
 // video 2
-.fugo-video-thumb2{
+.fugu-video-thumb2{
   border-radius: 10px;
   overflow: hidden;
   margin: 0;
@@ -77,6 +77,6 @@ a.fugo-popup img{
   }
 }
 
-.fugo-video-thumb3{
+.fugu-video-thumb3{
   margin: 0;
 }

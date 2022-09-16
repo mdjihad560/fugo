@@ -66,7 +66,7 @@ content: attr(data-monthly);
   }
 }
 
-.fugo-pricing{
+.fugu-pricing{
   &-wrap{
     padding: 40px;
     position: relative;
@@ -77,7 +77,7 @@ content: attr(data-monthly);
     }
     &.active{
       background-color: var(--gray-800);
-      .fugo-pricing-header{
+      .fugu-pricing-header{
         h5, p{
           color: #fff;
         }
@@ -85,12 +85,12 @@ content: attr(data-monthly);
           opacity: 0.8;
         }
       }
-      .fugo-price, 
+      .fugu-price, 
       p.bottom_text, 
-      .fugo-pricing-currency{
+      .fugu-pricing-currency{
         color: #fff;
       }
-      .fugo-pricing-body{
+      .fugu-pricing-body{
         ul{
           li{
             color: #fff;
@@ -99,10 +99,10 @@ content: attr(data-monthly);
         }
       }
     }
-    &.fugo-pricing-wrap{
+    &.fugu-pricing-wrap{
       margin-bottom: 24px;
     }
-    &.fugo-pricing-wrap3{
+    &.fugu-pricing-wrap3{
       padding: 30px;
       background: #FFFFFF;
       border: 1px solid rgba(19, 17, 26, 0.1);
@@ -114,15 +114,15 @@ content: attr(data-monthly);
         border: 1px solid #fff;
         box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.06);
       }
-      &:hover a.fugo-pricing-btn{
+      &:hover a.fugu-pricing-btn{
           border: 2px solid var(--warning-500);
           background-color: var(--warning-500);
       }
-      a.fugo-pricing-btn{
+      a.fugu-pricing-btn{
         margin: 0;
         padding: 13.5px;
       }
-      .fugo-pricing-price{
+      .fugu-pricing-price{
         margin-bottom: 15px;
       }
       p{
@@ -133,7 +133,7 @@ content: attr(data-monthly);
       p.bottom_text{
         margin: 0;
       }
-      .fugo-pricing-body {
+      .fugu-pricing-body {
         border-top: 1px solid rgba(19, 17, 26, 0.1);
         padding: 25px 0 35px;
         span{
@@ -196,7 +196,7 @@ content: attr(data-monthly);
     
   }
 }
-.fugo-price{
+.fugu-price{
   line-height: 1;
   margin: 0;
   font-size: 60px;
@@ -212,7 +212,7 @@ p.bottom_text{
   bottom: 5px;
   color: var(--gray-800);
 }
-a.fugo-pricing-btn{
+a.fugu-pricing-btn{
   display: block;
   width: 100%;
   font-size: 16px;
@@ -235,7 +235,7 @@ a.fugo-pricing-btn{
   }
 }
 
-.fugo-pricing-label {
+.fugu-pricing-label {
   width: 178px;
   top: 27px;
   right: -42px;

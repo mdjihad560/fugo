@@ -1,11 +1,11 @@
-.fugo-testimonial-section{
+.fugu-testimonial-section{
   background-color: var(--warning-400);
-  .fugo-section-title{
+  .fugu-section-title{
     max-width: 720px;
   }
 }
 
-.fugo-testimonial{
+.fugu-testimonial{
   &-card{
     padding: 30px;
     border-radius: 3px;
@@ -60,7 +60,7 @@
  
 }
 
-.fugo-testimonial-slider .fugo-testimonial-card{
+.fugu-testimonial-slider .fugu-testimonial-card{
   margin: 0 12px;
   padding: 29px;
   @include max(767px) {
@@ -69,7 +69,7 @@
 }
 
 // testimonial 2
-.fugo-testimonial{
+.fugu-testimonial{
   &-card2{
     padding: 40px;
     border-radius: 10px;
@@ -88,10 +88,10 @@
   }
 }
 
-.fugo-testimonial-slider2 {
+.fugu-testimonial-slider2 {
   max-width: 1150px;
   margin: 0 auto;
-  .fugo-testimonial-card2{
+  .fugu-testimonial-card2{
     margin: 0 32px;
     @include max(1399px) {
       margin: 0 20px;
@@ -102,13 +102,13 @@
   }
   
 }
-.fugo-testimonial-btn{
+.fugu-testimonial-btn{
   margin-top: 80px;
   text-align: center;
   @include max(1199px) {
     margin-top: 50px;
   }
-  .fugo-btn.fugo-header-btn{
+  .fugu-btn.fugu-header-btn{
     margin-left: 0;
   }
 }
@@ -116,7 +116,7 @@
 
 
 // testimonial page
-.fugo-testimonial{
+.fugu-testimonial{
   &-card3{
     padding: 40px;
     margin-bottom: 24px;
@@ -134,7 +134,7 @@
     p{
       color: var(--gray-800);
     }
-    .fugo-testimonial-author-wrap{
+    .fugu-testimonial-author-wrap{
       margin: 0;
     }
   }

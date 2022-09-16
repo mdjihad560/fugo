@@ -1,5 +1,5 @@
 
-.fugo-accordion {
+.fugu-accordion {
   &-item{
     margin-bottom: 40px;
     padding-bottom: 40px;
@@ -18,7 +18,7 @@
     @include max(991px) {
       margin-top: 40px;
     }
-    .fugo-accordion-item{
+    .fugu-accordion-item{
       display: flex;
       margin-bottom: 24px;
       padding-bottom: 24px;
@@ -43,7 +43,7 @@
 }
 
 
-a.fugo-faq-btn {
+a.fugu-faq-btn {
   font-size: 16px;
   position: absolute;
   bottom: 0;
@@ -116,7 +116,7 @@ a.fugo-faq-btn {
 
 
 // faq page
-.fugo-tab-menu{
+.fugu-tab-menu{
   margin-bottom: 80px;
   @include max(991px) {
     margin-bottom: 40px;
