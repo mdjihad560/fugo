@@ -38,3 +38,64 @@ header.nexto-header-section.nexto-header-two.sticky-menu{
   box-shadow: 0px 8px 80px rgba(19, 17, 26, 0.06);
 }
 
+
+
+
+
+
+
+// header 3
+
+header.fugu--header-section {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  top: 0;
+  padding: 13px 0;
+  transition: all 0.4s;
+  &.fugu--header-three{
+    background-color: var(--gray-800);
+    .site-menu-main .nav-link-item{
+      color: var(--gray-10);
+    }
+  }
+}
+header.fugu--header-section.sticky-menu{
+  padding: 10px 0;
+  background-color: var(--gray-800);
+}
+
+// header 4
+
+.fugu--header-two{
+  .site-menu-main .nav-link-item{
+    color: var(--gray-800);
+  }
+  &.site-header .mobile-menu-trigger span {
+    background-color: var(--gray-800);
+    &:before, &:after{
+      background-color: var(--gray-800);
+    }
+}
+}
+
+header.fugu--header-section.fugu--header-two.sticky-menu{
+  background-color: var(--gray-10);
+  box-shadow: 0px 8px 80px rgba(19, 17, 26, 0.06);
+}
+
+// header 5
+.fugu--header-three{
+  .site-navbar .menu-block-wrapper {
+    justify-content: center;
+  }
+}
+
+
+.fugu--header-three.site-header .mobile-menu-trigger span {
+  background-color: white;
+}
+.fugu--header-three.site-header .mobile-menu-trigger span:before, 
+.fugu--header-three.site-header .mobile-menu-trigger span:after {
+  background-color: white;
+}

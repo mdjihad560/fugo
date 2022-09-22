@@ -75,3 +75,59 @@
     }
   }
 }
+
+.fugu--counter-wrap {
+  display: flex;
+  max-width: 385px;
+  justify-content: space-between;
+  margin-top: 55px;
+  @include max(991px){
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  @include max(410px){
+    margin-top: 25px;
+  }
+  
+}
+
+.fugu--counter-data{
+  h2{
+    font-size: 48px;
+    line-height: 1;
+    color: white;
+    strong{
+      background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+  p{
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+  }
+}
+
+// counter 2
+.fugu--counter-wrap2{
+  @include max(991px) {
+    margin: 30px 0 0;
+  }
+  .fugu--counter-data{
+    h2{
+      margin: 0 0 10px;
+      strong{
+        background: none;
+        color: var(--gray-800);
+        -webkit-text-fill-color: var(--gray-800);
+      }
+    }
+    p{
+      font-weight: 600;
+      opacity: 1!important;
+    }
+  }
+}

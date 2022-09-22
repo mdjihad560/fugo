@@ -143,3 +143,160 @@
     }
   }
 }
+
+
+
+
+.fugu--iconbox {
+  &-wrap{
+    z-index: 0;
+    padding: 0 15px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 24px;
+    @include max(1400px) {
+      padding: 0;
+    }
+    &:before{
+      content: " ";
+      right: -68px;
+      top: 106px;
+      width: 108px;
+      height: 2px;
+      z-index: -1;
+      position: absolute;
+      background-image: url("../images/all-img/v3/line.png");
+    }
+  }
+  &-thumb{
+    margin-bottom: 30px;
+  }
+  &-data{
+    h4{
+      font-weight: 600;
+      font-size: 24px;
+      margin-bottom: 15px;
+      font-family: $body-font;
+      display: inline-block;
+      padding: 0 10px;
+      color: white;
+      background-color: var(--gray-800);
+    }
+    p{
+      color: #FFFFFF;
+      opacity: 0.8;
+      &:last-child{
+        margin: 0;
+      }
+    }
+  }
+ 
+}
+
+.fugu--roadmap-section{
+  .col-xl-3.col-md-6{
+    &:nth-child(4){
+    .fugu--iconbox-wrap{
+        &:before{
+          content: none;
+        }
+      }
+    }
+    @include max(1199px) {
+      &:nth-child(2){
+        .fugu--iconbox-wrap{
+            &:before{
+              content: none;
+            }
+          }
+        }
+    }
+  }
+  @include max(767px) {
+    .fugu--iconbox-wrap{
+        &:before{
+          content: none;
+        }
+    }
+  }
+}
+
+
+// icon box v2.0
+.fugu--roadmap-v2{
+  .fugu--iconbox{
+    &-wrap{
+      text-align: left;
+      padding: 0;
+      padding-right: 30px;
+      &:before{
+        content: none;
+      }
+    }
+    &-data{
+      h4{
+        padding: 0;
+        margin-bottom: 20px;
+        color: var(--gray-800);
+        background-color: transparent;
+      }
+      span{
+        font-weight: 600;
+        font-size: 18px;
+        display: block;
+        margin-bottom: 10px;
+        color: var(--gray-800);
+      }
+      p{
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--gray-800);
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+// iconbox v3
+.fugu--iconbox-wrap3{
+    padding: 40px;
+    border-radius: 3px;
+    background: linear-gradient(118.28deg, #17181A -8.97%, #636675 141.84%);
+    @include max(991px) {
+      padding: 30px;
+    }
+    &:before {
+      content: none;
+    }
+    &:hover .fugu--iconbox-thumb{
+      background-color: var(--gray-10);
+    }
+    &:hover .fugu--iconbox-thumb{
+      path{
+        fill: var(--primary-500);
+      }
+      
+    }
+    .fugu--iconbox{
+      &-thumb{
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        border-radius: 100%;
+        margin: 0 auto 30px;
+        justify-content: center;
+        transition: all 0.4s;
+        background-color: var(--primary-500);
+        path{
+          transition: all 0.4s;
+        }
+      }
+      &-data{
+        h4{
+          padding: 0;
+          background-color: transparent;
+        }
+      }
+    }
+}

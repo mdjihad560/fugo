@@ -22,3 +22,29 @@
     text-align: center;
   }
 }
+
+
+.fugu--cta-section {
+  z-index: 0;
+  background-size: cover;
+  position: relative;
+  background-color: var(--gray-800);
+}
+
+.fugu--cta-wrap{
+  border-radius: 10px;
+  padding: 80px 110px;
+  background-color: var(--primary-500);
+  @include max(1400px) {
+    padding: 80px;
+  }
+  @include max(991px) {
+    text-align: center;
+  }
+  @include max(767px) {
+    padding: 50px;
+  }
+  @include max(575px) {
+    padding: 35px;
+  }
+}

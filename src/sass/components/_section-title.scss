@@ -109,3 +109,131 @@
     }
   }
 }
+
+
+
+
+// section padding
+.fugu--section-padding{
+  padding: 112px 0 120px;
+  @include max(991px){
+    padding: 90px 0 100px;
+  }
+  @include max(767px){
+    padding: 70px 0 80px;
+  }
+}
+.fugu--section-padding2{
+  padding: 110px 0 95px;
+  @include max(991px) {
+    padding: 90px 0 75px;
+  }
+  @include max(767px) {
+    padding: 70px 0 55px;
+  }
+}
+.fugu--section-padding-bottom{
+  padding: 0 0 120px;
+  @include max(991px){
+    padding: 0 0 100px;
+  }
+  @include max(767px){
+    padding: 0 0 80px;
+  }
+}
+// section title
+.fugu--section-title{
+  max-width: 708px;
+  text-align: center;
+  margin: 0 auto 75px;
+  @include max(991px) {
+      margin: 0 auto 50px;
+  }
+  h2{
+    font-family: $another-font;
+  }
+  .fugu--default-content{
+    p{
+      padding: 0 20px;
+      @include max(767px) {
+       padding: 0;
+    }
+    }
+  }
+}
+
+// section-title 2
+
+.fugu--section-title{
+  &-wrap{
+    display: flex;
+    margin-bottom: 80px;
+    @include max(991px) {
+      margin-bottom: 60px;
+      display: block;
+      margin: 0 auto 60px;
+    }
+    align-items: flex-end;
+    justify-content: space-between;
+    .fugu--section-title{
+      text-align: left;
+      margin: 0;
+      max-width: 510px;
+      @include max(991px) {
+        margin: 0 auto;
+        text-align: center;
+      }
+      p{
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.fugu--default-content{
+  h2{
+    font-family: $another-font;
+    color: white;
+  }
+  &.content-sm{
+    h2{
+      font-size: 42px;
+      line-height: 48px;
+      color: white;
+      font-family: $another-font;
+      @include max(991px) { 
+        font-size: 40px;
+      }
+      @include max(767px) { 
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+  }
+  p{
+    color: #fff;
+      @include max(767px) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+  }
+  &.content-black{
+    h2{
+      color: var(--gray-800);
+      font-family: $heading-font;
+    }
+    p{
+      opacity: 0.8;
+      color: var(--gray-800);
+    }
+  }
+}
+
+.fugu--section-title2 {
+  margin-bottom: 65px;
+  @include max(991px) {
+    margin-bottom: 45px;
+    text-align: center;
+  }
+}

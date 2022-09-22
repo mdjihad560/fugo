@@ -1,0 +1,182 @@
+
+/* card */
+.fugu--card {
+  &-wrap{
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.4s;
+    position: relative;
+    background: #201C2C; 
+    box-shadow: 0 0 0 1px white;
+    &:hover{
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0);
+    } 
+    &:hover:before{
+      opacity: 1;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: -1px;
+      opacity: 0;
+      transition: all 0.4s;
+      border-radius: inherit;
+      background: linear-gradient(to right, #FF00D4 , #7D41EA, #0080FF );
+    }
+    &:hover .fugu--btn:before{
+      color: var(--gray-10);
+      opacity: 1;
+    }
+    &:hover .fugu--btn{
+      color: var(--gray-10);
+    }
+    &:hover .fugu--card-thumb img{
+      transform: scale(1.1) rotate(3deg);
+    }
+  }
+  &-thumb{
+    overflow: hidden;
+    border-radius: 10px;
+    img{
+      width: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: all 0.4s;
+      
+    }
+  }
+  &-data{
+    margin-top: 20px;
+    h3{
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+      color: var(--gray-10);
+      margin: 0 0 10px;
+      font-family: $body-font;
+    }
+    p{
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--gray-10);
+      opacity: 0.4;
+      margin: 0;
+    }
+  }
+  &-footer{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-data{
+      span{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--gray-10);
+      }
+      h4{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--gray-10);
+        margin: 0;
+        font-family: $body-font;
+      }
+    }
+    .fugu--btn{
+      min-width: inherit;
+    }
+  }
+}
+
+// card two
+  .fugu--card{
+    &-wrap{
+      &.fugu--card2{
+        background: var(--gray-10);
+        border: 3px solid var(--gray-800);
+        border-radius: 3px;
+        padding: 18px;
+        &:before{
+          content: none;
+        }
+        .fugu--card-thumb{
+          img{
+            border-radius: 3px;
+          }
+        }
+        .fugu--card-data {
+          h3{
+            color: var(--gray-800);
+          }
+          p{
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 20px;
+            opacity: 1;
+            color: var(--gray-800);
+            img{
+              margin-right: 8px;
+            }
+          }
+        }
+        .fugu--card-footer{
+          &-data{
+            h4{
+              font-weight: 400;
+              font-size: 18px;
+              color: var(--gray-800);
+              opacity: 0.8;
+            }
+          }
+          .fugu--btn{
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            color: rgba(19, 17, 26, 0.4)!important;
+            background-color: rgba(19, 17, 26, 0.1);
+            img{
+              opacity: .3;
+              margin-right: 7px;
+            }
+            &:before{
+              content: none;
+            }
+            .red-heart{
+              display: none;
+            }
+            &.dark-btn{
+              color: var(--gray-10)!important;
+              background-color: var(--gray-800);
+              img{
+                opacity: 1;
+              }
+              .red-heart{
+                display: block;
+              }
+              .black-heart{
+                display: none;
+              }
+            }
+          
+          }
+        }
+       
+      }
+        
+    }
+  }
+.fugu--slider-two{
+   .slick-slide{
+    margin: 0 12px;
+  }
+}

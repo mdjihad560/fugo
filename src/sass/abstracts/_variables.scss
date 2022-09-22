@@ -1,7 +1,7 @@
 // fonts variable
-$heading-font: 'Public Sans', sans-serif !default !default;
+$heading-font: 'Public Sans', sans-serif !default;
 $body-font: 'Inter', sans-serif !default;
-$another-font: 'Public Sans', sans-serif !default;
+$another-font: 'Space Grotesk', sans-serif !default;
 
 
 // color variable
@@ -14,12 +14,14 @@ $colors: (
     10: #fff,
   ),
   primary: (
-    500: #724FE5,
+    600: #724FE5,
+    500: #2C04FE,
   ),
   success: (
     500: #32E7B1,
   ),
   warning: (
+    600: #EEE6D0,
     500: #FFC947,
     400: #F0E9E1,
     300: #FFFDF5,
