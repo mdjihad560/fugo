@@ -490,3 +490,28 @@ footer.fugu--foote2-section {
     }
   }
 }
+
+// footer four
+footer.fugo--footer-section.white-version{
+  background-color: #fff;
+  .fugo--textarea p{
+    color: #13111A;
+  }
+  
+  .fugo--footer-menu {
+    span{
+      color: #13111A;
+    }
+    ul{
+      li{
+        a{
+          color: #13111A;
+        }
+      }
+    }
+  }
+  .fugo--footer-bottom p{
+    color: #13111A;
+  }
+}
+

@@ -296,6 +296,18 @@
   
 }
 .fugu--team-two{
+  padding: 0 0 120px;
+  @include max(991px) {
+    padding: 0 0 100px;
+  }
+  @include max(767px) {
+    padding: 0 0 80px;
+  }
+  .fugu--team-wrap {
+    margin-bottom: 40px;
+  }
+}
+.version-04.fugu--team-two{
   padding: 110px 0 80px;
   @include max(991px) {
     padding: 100px 0 60px;
@@ -303,7 +315,51 @@
   @include max(767px) {
     padding: 80px 0 40px;
   }
-  .fugu--team-wrap {
-    margin-bottom: 40px;
+}
+
+
+// team three about light blue
+.fugu--team-section.fugu--team-three{
+  background-color: var(--gray-10);
+  border: none;
+}
+.fugu--team-three{
+  .fugu--team{
+    &-wrap{
+      padding: 40px;
+      border-radius: 3px;
+      border: 1px solid var(--gray-800);
+    }
+    &-thumb{
+      width: 216px;
+      height: 216px;
+      border-radius: 100%;
+      margin: 0 auto 20px;
+      @media (min-width: 1200px) and (max-width: 1400px) {
+        width: 175px;
+        height: 175px;
+      }
+    }
+    
+  }
+}
+
+.fugu--inner-section.bg-white {
+  background: var(--gray-10);
+}
+
+.fugu--team-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.team-page .fugu--breadcrumbs-data {
+  max-width: 880px;
+}
+
+.dark-version{
+  .fugu--team-data p, 
+  .fugu--team-data h4{
+    color: #fff;
   }
 }

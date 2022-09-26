@@ -108,19 +108,32 @@ textarea::placeholder{ /* Most modern browsers support this now. */
 
 
 
+
 // all newsletter
 .fugu--newsletter {
   max-width: 430px;
   position: relative;
   margin: 0 auto;
   input{
-    height: 55px;
     color: #13111A;
+    height: 55px;
     padding: 10px 150px 10px 25px!important;
     background-color: var(--gray-10);
   }
+  &.fugu--search{
+    input{
+      height: 55px;
+      padding: 10px 150px 10px 50px!important;
+    }
+  }
 }
-
+button#fugu--search-btn {
+  position: absolute;
+  top: 11px;
+  z-index: 9;
+  left: 20px;
+  opacity: .5;
+}
 #fugu--submit-btn{
   font-weight: 700;
   width: 130px;
@@ -206,3 +219,4 @@ textarea::placeholder{ /* Most modern browsers support this now. */
   background: linear-gradient(225deg,#0080ff 0,#7d41ea 46.35%,#ff00d4 100%);
   border-radius: 10px;
 }
+

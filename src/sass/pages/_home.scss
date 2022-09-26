@@ -202,7 +202,7 @@
     margin: 2px 12px;
   }
   .fugu--slider-one .prev-arrow, 
-  .fugu--slider-one .next-arrow {
+  .fugu--slider-one .fugu--arrow {
     left: -30px;
     top: 50%;
     z-index: 9;
@@ -223,7 +223,7 @@
     background-image: url(../images/svg2/arrow-left.svg);
     
   }
-  .fugu--slider-one .next-arrow {
+  .fugu--slider-one .fugu--arrow {
     left: auto;
     right: -30px;
     background-image: url(../images/svg2/arrow-right.svg);

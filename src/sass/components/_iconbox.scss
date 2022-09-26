@@ -300,3 +300,36 @@
       }
     }
 }
+
+
+.fugu--iconbox-wrap4{
+  border-radius: 10px;
+  border: 1px solid var(--gray-10);
+  background: rgba(90, 75, 124, 0.2);
+  .fugu--iconbox{
+    &-thumb{
+      background: linear-gradient(0deg, #ADDCFF 0%, #EAF6FF 50.28%, #EAF6FF 100%);
+    }
+  
+  }
+}
+
+.fugu--iconbox-wrap5{
+  background: #211D2E;
+border-radius: 10px;
+  .fugu--iconbox{
+    &-thumb{
+      background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
+    }
+  &-data{
+    a{
+      font-weight: 700;
+      font-size: 16px;
+      color: #FFFFFF;
+      img{
+        margin-left: 10px;
+      }
+    }
+  }
+  }
+}

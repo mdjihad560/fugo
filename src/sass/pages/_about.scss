@@ -84,3 +84,164 @@
     }
     
 }
+
+// nexto fugo
+
+// about dark
+// about section
+.fugu--about-hero-section.dark-version {
+  background-size: cover;
+  padding: 200px 0 120px;
+  background-color: var(--gray-800);
+  @include max(767px) {
+    padding: 60px 0;
+  }
+}
+.fugu--about-section2{
+  z-index: 0;
+  position: relative;
+  background-color: var(--gray-800);
+  .fugu--hero-content{
+    max-width: 100%;
+  }
+  .fugu--section-title {
+    max-width: 855px;
+    p{
+      margin-right: 0;
+    }
+  }
+}
+
+.fugu--thumb-thumb2 {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.fugu--shpae5 {
+  position: absolute;
+  top: -20%;
+  right: 0;
+  z-index: -1;
+}
+
+.exeter-signal-loaded.exeter-signal {
+  margin-top: 0;
+}
+.exeter-signal{
+  margin-top: -200px;
+    transition: all 0.4s;
+}
+
+// nexto vision section
+.fugu--vision-section{
+  padding: 5px 0;
+  overflow: hidden;
+  background-color: var(--gray-800);
+  @include max(991px) {
+    padding: 5px 0 0;
+  }
+}
+.swiper-cards .swiper-slide{
+  overflow: inherit;
+}
+
+
+
+
+// video section
+.fugu--video-section2{
+  background-color: var(--gray-800);
+  .fugu--default-content.content-sm h2{
+    padding: 0 30px;
+    @include max(540px) {
+      padding: 0;
+    }
+  }
+  .fugu--video-thumb{
+    margin: 0;
+  }
+}
+
+// faq section
+.fugu--faq-section {
+  &.dark-version{
+    background-color: var(--gray-800);
+    .fugu--section-title {
+        margin: 0 auto 45px;
+        @include max(991px) {
+          margin: 0 auto 25px;
+        }
+    }
+    .fugu--default-content{
+      @include max(991px) {
+        margin: 0 auto;
+        max-width: 600px;
+        text-align: center
+      }
+    }
+  }
+}
+
+// about light 
+.fugu--feature2-section{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -51.59%, #EEE6D0 119.2%);
+}
+.fugu--feature{
+  &-wrap{
+    padding: 0 45px;
+    padding-bottom: 90px;
+    margin-bottom: 24px;
+    border-left: 1px solid rgba(19, 17, 26, 0.2);
+    @include max(1400px) {
+      padding: 0 30px;
+      padding-right: 0;
+      padding-bottom: 90px;
+    }
+    @include max(1199px) {
+      padding-bottom: 0;
+      padding-right: 0;
+    }
+    @include max(991px) {
+      padding: 0 25px;
+      padding-right: 0;
+    }
+  }
+  &-data{
+    h2{
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 1;
+      margin-bottom: 30px;
+      color: #FF6B55;
+      font-family: $another-font;
+    }
+    span{
+      display: block;
+      font-size: 30px;
+      line-height: 1;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+      color: var(--gray-800);
+      @include max(575px) {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+    }
+    p{
+      color: #13111A;
+      opacity: 0.8;
+      &:last-child{
+        margin: 0;
+      }
+    }
+  }
+}
+
+.col-xl-4.col-md-6{
+  &:nth-child(2) .fugu--feature-wrap{
+    padding-top: 90px;
+    padding-bottom: 0;
+    @include max(1199px) {
+      padding-top: 0;
+    }
+  }
+}
