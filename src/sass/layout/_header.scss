@@ -104,3 +104,15 @@ header.fugu--header-section.fugu--header-two.sticky-menu{
 .fugu--header-three.site-header .mobile-menu-trigger span:after {
   background-color: white;
 }
+
+.fugu-responsive-btn{
+  display: none;
+  margin-top: 40px;
+  padding: 0 15px;
+  .fugu-btn.fugu-header-btn{
+    margin: 0;
+  }
+  @include max(991px) {
+    display: block;
+  }
+}
