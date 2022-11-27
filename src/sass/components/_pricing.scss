@@ -249,3 +249,148 @@ a.fugu-pricing-btn{
   position: absolute;
   background-color: var(--warning-500);
 }
+
+// pricing dark
+.fugu-pricing-dark{
+  .pricing-btn {
+    label{
+      color: var(--gray-10);
+    }
+  }
+  .pricing-btn .btn-toggle{
+    background-color: #7D41EA!important;
+    background-image: url(../images/all-img/service/circle-bg2.png);
+  }
+  .pricing-btn .btn-toggle:checked{
+    background-color: #7D41EA!important;
+    background-image: url(../images/all-img/service/circle-bg2.png);
+  }
+  .fugu-pricing-header{
+    h5{
+      color: var(--gray-10);
+    }
+    p{
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  .fugu-price, 
+  .fugu-pricing-currency, 
+  p.bottom_text{
+    color: var(--gray-10);
+  }
+  .fugu--outline-btn{
+    display: block;
+    margin-bottom: 40px;
+    span{
+      padding: 12.5px 38px;
+      background-color: var(--gray-600);
+      &:hover{
+        background-color: transparent;
+      }
+    }
+  }
+  .fugu-pricing-body ul li{
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .fugu-pricing-label {
+      color: var(--gray-10);
+      background: linear-gradient(225deg, #0080FF 0%, #7D41EA 46.35%, #FF00D4 100%);
+  }
+  .fugu-default-content{
+    h2{
+      color: var(--gray-10);
+    }
+    p{
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  .fugu-accordion-item {
+    h4{
+      color: var(--gray-10);
+    }
+    p{
+      color: rgba(255, 255, 255, 0.8);
+    }
+    border-bottom: 1px solid var(--gray-10);
+    &:last-child{
+      border: none;
+    }
+  }
+  a.fugu-faq-btn{
+    color: var(--gray-10);
+    &:hover{
+      color: var(--warning-500);
+    }
+  }
+  &.fugu-client-section{
+    padding: 0;
+  }
+  .fugu-client-title {
+    h5{
+      color: var(--gray-10);
+    }
+  }
+
+  // pricing dark two
+  .fugu-pricing-wrap.fugu-pricing-wrap3{
+    background-color: var(--gray-600);
+    p{
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .fugu-pricing-body{
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      span{
+        color: rgba(255, 255, 255, 0.8);
+      }
+      li{
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+// privicy plolicy
+.fugu-privacy-policy-wrap{
+  p{
+    color: var(--gray-800);
+  }
+  ul{
+    margin-bottom: 40px;
+    li{
+      padding-left: 20px;
+      padding-bottom: 15px;
+      position: relative;
+      color: var(--gray-800);
+      &:before{
+        content: "";
+        left: 0;
+        top: 10px;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        position: absolute;
+        background-color: var(--gray-800);
+      }
+      &:last-child{
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.fugu-privacy-policy-dark{
+  .fugu-privacy-policy-wrap{
+    p, h2, h4{
+      color: var(--gray-10);
+    }
+    ul{
+      li{
+        color: var(--gray-10);
+        &:before{
+          background-color: var(--gray-10);
+        }
+      }
+    }
+  }
+}
